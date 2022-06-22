@@ -1,0 +1,471 @@
+.gallery-header {
+  display: flex;
+  padding: 40px 0 0 40px;
+  margin: 0 auto 50px 0;
+}
+.gallery-header img {
+  display: flex;
+  width: 140px;
+  padding: 0 30px 0 0;
+}
+.gallery-header h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #fdb100d6;
+  font-weight: 400;
+  color: white;
+  border-radius: 30px;
+  padding: 0.4vmax 2.5vmax;
+}
+.holiCelebration {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.holiCelebration h3 {
+  display: flex;
+  text-align: start;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 450;
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(1, 1, 1, 0.2);
+  width: 70%;
+  border-radius: 10px;
+  padding: 0.8vmax 2vmax;
+}
+.holi-pictures {
+  text-align: start;
+  width: 75%;
+  margin: 30px auto 100px auto;
+}
+.holi-pictures .holi1 {
+  display: inline-block;
+  width: 27vw;
+  height: 45vh;
+  margin: 0 20px 20px 0;
+}
+.holi-pictures .holi2 {
+  display: inline-block;
+  width: 44vw;
+  height: 45vh;
+  vertical-align: top;
+  margin: 0 0 20px 20px;
+}
+.holi-pictures .holi3 {
+  display: inline-block;
+  width: 74vw;
+  height: 60vh;
+  margin: 20px 0 20px 0;
+}
+.holi-pictures .holi4 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 20px 20px 0;
+}
+.holi-pictures .holi5 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 20px 20px 20px;
+}
+.holi-pictures .holi6 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 0 20px 20px;
+}
+.holi-pictures .holi7 {
+  display: inline-block;
+  width: 48vw;
+  height: 80vh;
+  margin: 20px 20px 0 0;
+}
+.holi-pictures .holi8 {
+  display: inline-block;
+  width: 23vw;
+  height: 80vh;
+  margin: 20px 0 0 20px;
+}
+.womensDay {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.womensDay h3 {
+  display: flex;
+  text-align: start;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 450;
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(1, 1, 1, 0.2);
+  width: 70%;
+  border-radius: 10px;
+  padding: 0.8vmax 2vmax;
+}
+.WomensDay-Pictures {
+  display: inline-block;
+  text-align: start;
+  width: 75%;
+  margin: 30px auto 100px auto;
+}
+.WomensDay-Pictures .womenD1 {
+  display: inline-block;
+  width: 27vw;
+  height: 45vh;
+  margin: 0 20px 20px 0;
+}
+.WomensDay-Pictures .womenD2 {
+  display: inline-block;
+  width: 44vw;
+  height: 45vh;
+  vertical-align: top;
+  margin: 0 0 20px 20px;
+}
+.WomensDay-Pictures .womenD3 {
+  display: inline-block;
+  width: 74vw;
+  height: 60vh;
+  margin: 20px 0 20px 0;
+}
+.WomensDay-Pictures .womenD4 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 20px 20px 0;
+}
+.WomensDay-Pictures .womenD5 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 20px 20px 20px;
+}
+.WomensDay-Pictures .womenD6 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 0 20px 20px;
+}
+.WomensDay-Pictures .womenD7 {
+  display: inline-block;
+  width: 48vw;
+  height: 80vh;
+  margin: 20px 20px 0 0;
+}
+.WomensDay-Pictures .womenD8 {
+  display: inline-block;
+  width: 23vw;
+  height: 80vh;
+  margin: 20px 0 0 20px;
+}
+.ubuntuProgram {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.ubuntuProgram h3 {
+  display: flex;
+  text-align: start;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 450;
+  background-color: white;
+  box-shadow: 0 0 4px 0 rgba(1, 1, 1, 0.2);
+  width: 70%;
+  border-radius: 10px;
+  padding: 0.8vmax 2vmax;
+}
+.ubuntu-pictures {
+  display: inline-block;
+  text-align: start;
+  width: 75%;
+  margin: 30px auto 0 auto;
+}
+.ubuntu-pictures .ubuntu1 {
+  display: inline-block;
+  width: 27vw;
+  height: 45vh;
+  margin: 0 20px 20px 0;
+}
+.ubuntu-pictures .ubuntu2 {
+  display: inline-block;
+  width: 44vw;
+  height: 45vh;
+  vertical-align: top;
+  margin: 0 0 20px 20px;
+}
+.ubuntu-pictures .ubuntu3 {
+  display: inline-block;
+  width: 74vw;
+  height: 60vh;
+  margin: 20px 0 20px 0;
+}
+.ubuntu-pictures .ubuntu4 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 20px 20px 0;
+}
+.ubuntu-pictures .ubuntu5 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 20px 20px 20px;
+}
+.ubuntu-pictures .ubuntu6 {
+  display: inline-block;
+  width: 22.7vw;
+  height: 40vh;
+  margin: 20px 0 20px 20px;
+}
+.ubuntu-pictures .ubuntu7 {
+  display: inline-block;
+  width: 48vw;
+  height: 80vh;
+  margin: 20px 20px 0 0;
+}
+.ubuntu-pictures .ubuntu8 {
+  display: inline-block;
+  width: 23vw;
+  height: 80vh;
+  margin: 20px 0 0 20px;
+}
+@media screen and (max-width: 900px ) and (min-width:300px) {
+  .gallery-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto auto 50px auto;
+    padding: 0;
+  }
+  .gallery-header img {
+    display: flex;
+    width: 100px;
+    padding: 0 20px 0 0;
+  }
+  .gallery-header h4 {
+    display: flex;
+    margin-top: 15%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 0.2vmax 2.5vmax;
+  }
+  .holiCelebration {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .holiCelebration h3 {
+    display: flex;
+    text-align: start;
+    font-size: 28px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5vmax 2.3vmax;
+  }
+  .holi-pictures {
+    text-align: start;
+    width: 90%;
+    margin: 30px auto 100px auto;
+  }
+  .holi-pictures .holi1 {
+    display: inline-block;
+    width: 30vw;
+    height: 20vh;
+    margin: 0 10px 10px 0;
+  }
+  .holi-pictures .holi2 {
+    display: inline-block;
+    width: 55.5vw;
+    height: 20vh;
+    vertical-align: top;
+    margin: 0 0 10px 10px;
+  }
+  .holi-pictures .holi3 {
+    display: inline-block;
+    width: 90vw;
+    height: 30vh;
+    margin: 10px 0 10px 0;
+  }
+  .holi-pictures .holi4 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 10px 10px 0;
+  }
+  .holi-pictures .holi5 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 10px 10px 10px;
+  }
+  .holi-pictures .holi6 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 0 10px 10px;
+  }
+  .holi-pictures .holi7 {
+    display: inline-block;
+    width: 57.5vw;
+    height: 30vh;
+    margin: 10px 10px 0 0;
+  }
+  .holi-pictures .holi8 {
+    display: inline-block;
+    width: 28vw;
+    height: 30vh;
+    margin: 10px 0 0 10px;
+  }
+  .womensDay {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .womensDay h3 {
+    display: flex;
+    text-align: start;
+    font-size: 28px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5vmax 2.3vmax;
+  }
+  .WomensDay-Pictures {
+    text-align: start;
+    width: 90%;
+    margin: 30px auto 100px auto;
+  }
+  .WomensDay-Pictures .womenD1 {
+    display: inline-block;
+    width: 30vw;
+    height: 20vh;
+    margin: 0 10px 10px 0;
+  }
+  .WomensDay-Pictures .womenD2 {
+    display: inline-block;
+    width: 55.5vw;
+    height: 20vh;
+    vertical-align: top;
+    margin: 0 0 10px 10px;
+  }
+  .WomensDay-Pictures .womenD3 {
+    display: inline-block;
+    width: 90vw;
+    height: 30vh;
+    margin: 10px 0 10px 0;
+  }
+  .WomensDay-Pictures .womenD4 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 10px 10px 0;
+  }
+  .WomensDay-Pictures .womenD5 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 10px 10px 10px;
+  }
+  .WomensDay-Pictures .womenD6 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 0 10px 10px;
+  }
+  .WomensDay-Pictures .womenD7 {
+    display: inline-block;
+    width: 57.5vw;
+    height: 30vh;
+    margin: 10px 10px 0 0;
+  }
+  .WomensDay-Pictures .womenD8 {
+    display: inline-block;
+    width: 28vw;
+    height: 30vh;
+    margin: 10px 0 0 10px;
+  }
+  .ubuntuProgram {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+  }
+  .ubuntuProgram h3 {
+    display: flex;
+    text-align: start;
+    font-size: 28px;
+    width: 80%;
+    border-radius: 10px;
+    padding: 1.5vmax 2.3vmax;
+  }
+  .ubuntu-pictures {
+    text-align: start;
+    width: 90%;
+    margin: 30px auto 100px auto;
+  }
+  .ubuntu-pictures .ubuntu1 {
+    display: inline-block;
+    width: 30vw;
+    height: 20vh;
+    margin: 0 10px 10px 0;
+  }
+  .ubuntu-pictures .ubuntu2 {
+    display: inline-block;
+    width: 55.5vw;
+    height: 20vh;
+    vertical-align: top;
+    margin: 0 0 10px 10px;
+  }
+  .ubuntu-pictures .ubuntu3 {
+    display: inline-block;
+    width: 90vw;
+    height: 30vh;
+    margin: 10px 0 10px 0;
+  }
+  .ubuntu-pictures .ubuntu4 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 10px 10px 0;
+  }
+  .ubuntu-pictures .ubuntu5 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 10px 10px 10px;
+  }
+  .ubuntu-pictures .ubuntu6 {
+    display: inline-block;
+    width: 26.9vw;
+    height: 18vh;
+    margin: 10px 0 10px 10px;
+  }
+  .ubuntu-pictures .ubuntu7 {
+    display: inline-block;
+    width: 57.5vw;
+    height: 30vh;
+    margin: 10px 10px 0 0;
+  }
+  .ubuntu-pictures .ubuntu8 {
+    display: inline-block;
+    width: 28vw;
+    height: 30vh;
+    margin: 10px 0 0 10px;
+  }
+}

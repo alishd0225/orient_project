@@ -1,0 +1,568 @@
+.bg-image img {
+  display: flex;
+  width: 50%;
+  float: left;
+  margin-top: 10vh;
+}
+.slideShow {
+  display: flexbox;
+}
+.slideShow img {
+  width: 40%;
+  margin-left: 85px;
+  margin-top: 15vh;
+}
+.blockquote {
+  position: relative;
+  margin-left: 58%;
+}
+.blockquote:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  top: 5px;
+  content: "\f10d";
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+.blockquote p {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 600px;
+  text-align: center;
+  margin-left: 10%;
+  padding: 35px 0;
+}
+.slideShow button {
+  background-color: rgb(254, 254, 254);
+  color: rgb(7, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 8px 50px;
+  border-radius: 8px;
+  margin-left: 70%;
+  cursor: pointer;
+}
+.slideShow button:hover {
+  background-color: #297ae6;
+  color: white;
+  border-color: white;
+}
+.popUp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-family: Helvetica Neue;
+  color: #297ae6;
+}
+.popUp img {
+  width: 40px;
+  margin-left: 90%;
+  cursor: pointer;
+}
+.popUp p {
+  color: #191818;
+  font-size: 12px;
+}
+.academicProgram {
+  margin-top: 100px;
+}
+.academicProgram h1 {
+  font-size: 60px;
+  font-family: Lucida Sans;
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.container .plusTwoProgram {
+  margin-right: 50px;
+}
+.container .plusTwoProgram h4 {
+  margin-left: 30px;
+}
+.container .plusTwoProgram img {
+  margin-top: 25px;
+  margin-left: 30px;
+  width: 120px;
+}
+.container .plusTwoProgram p {
+  font-size: 20px;
+  color: #525252;
+  margin-left: 30px;
+  font-family: Apple Braille;
+}
+.container .plusTwoProgram ul {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.container .plusTwoProgram ul li::before {
+  content: "\2022";
+  margin-bottom: 50px;
+  padding-right: 20px;
+  color: #1fc32c;
+  font-weight: bold;
+  margin-left: -1em;
+  font-size: 35px;
+  width: 100px;
+}
+.container .plusTwoProgram button {
+  margin-left: 65%;
+  background-color: #1fc32c;
+  border-style: none;
+  border-radius: 30px;
+  color: rgb(250, 248, 248);
+  font-size: 20 px;
+  font-weight: 600;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.container .A_level {
+  margin-left: 50px;
+}
+.container .A_level h4 {
+  margin-left: 30px;
+}
+.container .A_level img {
+  margin-left: 30px;
+  margin-top: 25px;
+  width: 70px;
+}
+.container .A_level h5 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: -18%;
+  margin-left: 25%;
+  font: 400 2.6vmax solid;
+}
+.container .A_level p {
+  font-size: 20px;
+  color: #525252;
+  margin-left: 30px;
+  font-family: Apple Braille;
+  margin-top: -30px;
+}
+.container .A_level ul {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+.container .A_level ul li::before {
+  content: "\2022";
+  margin-bottom: 50px;
+  padding-right: 20px;
+  color: #e43d4d;
+  font-weight: bold;
+  margin-left: -1em;
+  font-size: 35px;
+  width: 100px;
+}
+.container .A_level button {
+  margin-left: 65%;
+  background-color: #e43d4d;
+  border-style: none;
+  border-radius: 30px;
+  color: rgb(250, 248, 248);
+  font-size: 20 px;
+  font-weight: 600;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.memoriesOfExcellence {
+  display: inline-table;
+  margin: 20px;
+}
+.memoriesOfExcellence h1 {
+  margin-top: 100px;
+  font-size: 60px;
+  font-family: Lucida Sans;
+  text-align: center;
+}
+.memoriesOfExcellence .upDownImage {
+  display: inline-block;
+  vertical-align: top;
+}
+.memoriesOfExcellence .entertainment {
+  width: 25vmax;
+  height: 16vmax;
+  display: inline-block;
+  margin: 10px;
+}
+.memoriesOfExcellence .travels {
+  display: block;
+  width: 25vmax;
+  height: 16vmax;
+  margin: 10px;
+  margin-top: 25px;
+}
+.memoriesOfExcellence .study {
+  display: inline-block;
+  width: 36vmax;
+  height: 35vmax;
+  margin: 10px;
+}
+.memoriesOfExcellence .basketball {
+  display: inline-block;
+  vertical-align: top;
+  width: 30vmax;
+  height: 35vmax;
+  margin: 10px;
+}
+.collegeBuilding {
+  display: inline-block;
+  vertical-align: top;
+  margin: 40px;
+  margin-left: 50px;
+}
+.collegeBuilding .building {
+  width: 50vmax;
+  display: inline;
+}
+.collegeBuilding .location {
+  display: inline;
+}
+.collegeBuilding .location .map {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 84px;
+  width: 36vmax;
+}
+.collegeBuilding .location button {
+  display: block;
+  margin-top: -25%;
+  float: right;
+  width: 36vw;
+  height: 8vh;
+  background-color: #12a4ff;
+  border-style: none;
+  border-radius: 10px;
+  color: rgb(250, 248, 248);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.collegeBuilding .location h5 {
+  display: inline;
+  margin-right: 270px;
+  float: right;
+  margin-top: -12%;
+  font-size: 25px;
+  color: #0a63cb;
+}
+.collegeBuilding .location .address {
+  display: inline;
+  margin-right: 220px;
+  float: right;
+  margin-top: -6%;
+  font-size: 20px;
+}
+.collegeBuilding .location .phone {
+  display: inline;
+  margin-right: 178px;
+  float: right;
+  margin-top: -3%;
+  font-size: 20px;
+}
+.talkShow {
+  display: block;
+}
+.talkShow h1 {
+  font-size: 60px;
+  font-family: Lucida Sans;
+  text-align: center;
+}
+.talkShow h1 span {
+  color: #1fc32c;
+}
+.youtube-video {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin: 0 30px 0 30px;
+}
+
+.youtube-video iframe {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .bg-image img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    float: none;
+    margin-top: 10vh;
+  }
+  .slideShow img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5vh;
+  }
+  .blockquote {
+    position: relative;
+    margin-left: 0;
+    margin: 5%;
+  }
+  .blockquote:before {
+    font-family: "FontAwesome";
+    top: 6px;
+    content: "\f10d";
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+  }
+  .blockquote p {
+    font-size: 2.7vmax;
+    font-weight: 500px;
+    text-align: center;
+    margin-left: 3vmax;
+    padding: 15px 0;
+  }
+  .slideShow button {
+    display: none;
+  }
+  .popUp img {
+    position: absolute;
+    right: 10%;
+  }
+  .academicProgram h1 {
+    font-size: 40px;
+  }
+  .container {
+    display: block;
+    align-items: center;
+    margin: 0;
+    font-size: 30px;
+    color: white;
+  }
+  .container .plusTwoProgram {
+    margin-left: 0;
+    align-items: center;
+    justify-content: start;
+  }
+  .container .plusTwoProgram div {
+    width: 55vmax;
+    height: 450px;
+  }
+  .container .plusTwoProgram h4 {
+    margin-left: 4vmax;
+  }
+  .container .plusTwoProgram img {
+    width: 80px;
+  }
+  .container .plusTwoProgram p {
+    font-size: 14px;
+  }
+  .container .plusTwoProgram ul {
+    font-size: 12px;
+    color: black;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+
+  .container .plusTwoProgram ul li::before {
+    padding-right: 20px;
+    font-size: 30px;
+    width: 100px;
+  }
+  .container .plusTwoProgram button {
+    display: flex;
+    margin-left: 30vmax;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 14 px;
+    font-weight: 600;
+    padding: 8px 40px;
+    cursor: pointer;
+  }
+  .container .A_level {
+  align-items: center;
+  justify-content: start;
+    margin-top: 100px;
+    margin-left: 0;
+  }
+  .container .A_level div {
+    width: 55vmax;
+    height: 450px;
+  }
+  .container .A_level h4 {
+    margin-left: 4vmax;
+  }
+  .container .A_level img {
+    width: 60px;
+  }
+  .container .A_level h5 {
+    justify-content: center;
+    margin-top: -14%;
+    margin: 10x;
+    font: 500 3.9vmax solid;
+  }
+  .container .A_level p {
+    font-size: 14px;
+  }
+  .container .A_level ul {
+    font-size: 12px;
+    color: black;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+  .container .A_level ul li::before {
+    padding-right: 20px;
+    font-size: 30px;
+    width: 100px;
+  }
+  .container .A_level button {
+    display: flex;
+    margin-left: 30vmax;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 14 px;
+    font-weight: 600;
+    padding: 8px 40px;
+    cursor: pointer;
+  }
+  .memoriesOfExcellence h1 {
+    font-size: 40px;
+  }
+  .memoriesOfExcellence img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .memoriesOfExcellence .entertainment {
+    width: 40vmax;
+    height: 20vmax;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0;
+  }
+  .memoriesOfExcellence .travels {
+    display: block;
+    width: 40vmax;
+    height: 20vmax;
+    border-radius: 10px;
+    margin: 0;
+  }
+  .memoriesOfExcellence .study {
+    display: none;
+  }
+  .memoriesOfExcellence .basketball {
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: top;
+    width: 40vmax;
+    height: 45vmax;
+    margin: 0;
+  }
+  .collegeBuilding {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .collegeBuilding {
+    display: block;
+    margin: 0;
+    margin-left: 0;
+  }
+  .collegeBuilding .building {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: start;
+    margin: 0;
+  }
+  .collegeBuilding .location {
+    display: block;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin: 0;
+  }
+  .collegeBuilding .location .map {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .collegeBuilding .location button {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    float: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 8vh;
+    border-radius: 10px;
+    border-style: none;
+    color: rgb(250, 248, 248);
+  }
+  .collegeBuilding .location h5 {
+    display: block;
+    align-items: center;
+    justify-self: center;
+    margin: 0;
+    margin-top: 50px;
+    margin-right: 0;
+    float: none;
+    font-size: 25px;
+  }
+  .collegeBuilding .location .address {
+    display: block;
+    align-items: center;
+    justify-self: center;
+    margin: 0;
+    margin-right: 0;
+    float: none;
+    font-size: 18px;
+  }
+  .collegeBuilding .location .phone {
+    display: block;
+    align-items: center;
+    justify-self: center;
+    margin: 0;
+    margin-right: 0;
+    float: none;
+    font-size: 18px;
+  }
+  .talkShow h1 {
+    font-size: 50px;
+  }
+  .talkShow img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

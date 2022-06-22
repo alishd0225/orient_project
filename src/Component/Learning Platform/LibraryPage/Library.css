@@ -1,0 +1,30 @@
+.library-icon-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.fa-book{
+    font-size: 40px;
+    color: #E783FF;
+    padding: 0 1vmax 0 0;
+}
+.library-icon-text h4{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 0 0 0 1vmax ;
+}
+@media screen and (max-width:900px) and (min-width:300px){
+    .library-icon-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .fa-book{
+        font-size: 30px;
+    }
+    .library-icon-text h4{
+        font-size: 25px;
+    }
+}

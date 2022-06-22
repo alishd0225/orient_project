@@ -1,0 +1,166 @@
+.form {
+  display: flex-box;
+  text-align: center;
+  background-color: white;
+  padding: 40px;
+  margin:  40px auto 0 auto;;
+  border-radius: 20px;
+  box-shadow: 0 0 8px 0 rgba(4, 4, 4, 0.2);
+  width: 50%;
+}
+.form .first-alignment {
+  display: inline-block;
+  padding: 0px 0px 0px 30px ;
+}
+.form .campbridgeLogo {
+  width: 40px;
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: start;
+  padding: 5px;
+}
+.form h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: baseline;
+  vertical-align: top;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 500;
+}
+.form span {
+  display: inline-block;
+  transform: scale(1, 3);
+  color: grey;
+  vertical-align: top;
+  padding: 10px;
+}
+.form .orient {
+  display: inline;
+  padding: 5px;
+  vertical-align: top;
+  width: 70px;
+}
+.leftSide {
+  display: inline-block;
+  text-align: start;
+  padding: 40px;
+}
+.leftSide .label {
+  display: block;
+}
+.leftSide input {
+  width: 100%;
+  background-color: #ebebeb;
+  padding: 12px 30px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-style: none;
+}
+.rightSide {
+  display: inline-block;
+  text-align: start;
+  padding: 40px;
+}
+.rightSide .label {
+  display: block;
+}
+.rightSide input {
+  width: 100%;
+  background-color: #ebebeb;
+  padding: 12px 30px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-style: none;
+}
+.apply-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #2782fd;
+  padding: 0.6vmax ;
+  border-radius: 8px;
+  width: 80%;
+  border-style: none;
+  color: white;
+  font-size: 1.5vmax;
+  cursor: pointer;
+}
+.apply-btn:hover{
+  background-color: #074aa3;
+}
+.form p{
+  text-align: center;
+  color: #696969;
+}
+@media screen and (max-width:900px) {
+  .form {
+    border-radius: 0;
+    box-shadow:none ;
+    margin-top: 30px;
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  .form .first-alignment {
+    display: inline-block;
+    padding: 0px 0px 0px 0px ;
+  }
+  .form .first-alignment .campbridgeLogo {
+    width: 30px;
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0;
+  }
+  .form .first-alignment h2 {
+    display: inline;
+    vertical-align: top;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .form .first-alignment span {
+    display: inline-block;
+    transform: scale(1, 2);
+    padding: 2px;
+  }
+  .form .first-alignment .orient {
+    display: inline;
+    padding: 0;
+    vertical-align:top;
+    margin-top: -4%;
+    width: 60px;
+  }
+  .leftSide {
+    display: inline-block;
+    text-align: start;
+    padding: 40px;
+  }
+  .rightSide {
+    display: inline-block;
+    text-align: start;
+    padding: 40px;
+    margin-top: -20%;
+  }
+  .apply-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vmax ;
+    margin: auto;
+    border-radius: 8px;
+    font-size: 2vmax;
+    width: 70%;
+  }
+  .form p{
+    text-align: center;
+    vertical-align: top;
+    float:initial;
+  }
+}

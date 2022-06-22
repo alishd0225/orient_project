@@ -1,0 +1,133 @@
+.bg-form{
+    display: flex-box;
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    margin: 100px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 rgba(4, 4, 4, 0.2);
+    width: 50%;
+  }
+  .bg-form .first-alignment {
+    display: inline-block;
+    padding: 0px 40px 0px 40px ;
+  }
+   .first-alignment .campbridgeLogo {
+    width: 50px;
+    display: inline;
+    padding: 5px;
+  }
+   .first-alignment h2 {
+    display: inline;
+    vertical-align: top;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .first-alignment span {
+    display: inline-block;
+    transform: scale(1, 3);
+    color: grey;
+    vertical-align:top;
+    padding:10px;
+  }
+ .first-alignment .orient {
+    display: inline;
+    vertical-align: top;
+    width: 80px;
+    padding: 5px;
+  }
+   h2{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 0 10px 0;
+  }
+  .bg-form p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 80px 40px 80px;
+    color: #555555;
+    font-size: 18px;
+    margin: auto;
+  }
+  .bg-form .okay-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #2782fd;
+    padding: 0.6vmax ;
+    border-radius: 8px;
+    width: 50%;
+    border-style: none;
+    color: white;
+    font-size: 1.5vmax;
+    cursor: pointer;
+  }
+  .okay-btn:hover{
+    background-color: #074aa3;
+  }
+  @media screen and (max-width:900px) {
+    .bg-form{
+      padding:  40px;
+      width: 70%;
+    }
+    .bg-form .first-alignment {
+      display: inline-block;
+      padding: 0;
+    }
+     .first-alignment .campbridgeLogo {
+      width: 30px;
+      display: inline;
+      padding: 0;
+    }
+     .first-alignment h2 {
+      display: inline;
+      vertical-align: top;
+      padding: 0;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .first-alignment span {
+      display: inline-block;
+      transform: scale(1, 3);
+      vertical-align:top;
+      padding:0;
+    }
+   .first-alignment .orient {
+      display: inline;
+      vertical-align: top;
+      width: 50px;
+      margin-top: 0;
+      padding: 0;
+    }
+     h2{
+      display: block;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px 0 10px 0;
+    }
+    .bg-form p{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 0 0 30px 0;
+      color: #555555;
+      font-size: 15px;
+      margin: auto;
+    }
+    .bg-form .okay-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      padding: 1.5vmax ;
+      width: 100%;
+      border-style: none;
+      font-size: 2vmax;
+    }
+  }

@@ -1,0 +1,263 @@
+.plustwo-header {
+  display: flex;
+  padding: 40px 0 0 40px;
+  margin: auto;
+}
+.plustwo-header .orient {
+  display: flex;
+  width: 100px;
+  height: 80px;
+  margin-top: 20px;
+  padding: 0 30px 0 0;
+}
+.plustwo-header h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: #1ad52f;
+  font-weight: 500;
+  color: white;
+  border-radius: 30px;
+  padding: 0.6vmax 2.5vmax;
+}
+.plustwo-result-search {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: auto;
+}
+.plustwo-result-search .left-form-name {
+  display: flex;
+  margin: auto 40px auto 40px;
+}
+.plustwo-result-search .left-form-name input {
+  border-radius: 20px;
+  border-style: none;
+  padding: 0.5vmax 2vmax;
+  outline: none;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+  background-color: #f2f2f2;
+}
+.plustwo-result-search .middle-form-faculty {
+  display: flex;
+  margin: auto 40px auto 40px;
+}
+.plustwo-result-search .middle-form-faculty input {
+  border-radius: 20px;
+  border-style: none;
+  padding: 0.5vmax 2vmax;
+  outline: none;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+  background-color: #f2f2f2;
+}
+.plustwo-result-search .right-form-studentId {
+  display: flex;
+  margin: auto 40px auto 40px;
+}
+.plustwo-result-search .right-form-studentId input {
+  border-radius: 20px;
+  border-style: none;
+  padding: 0.5vmax 2vmax;
+  outline: none;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+  background-color: #f2f2f2;
+}
+.plustwo-search-icon .fa-search {
+  font-size: 22px;
+  background-color: #1ad52f;
+  border-radius: 50%;
+  color: white;
+}
+.search-btn {
+  display: none;
+}
+.right-side-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin: 100px 50px 0 0;
+}
+.right-side-wrap .plustwo-side-btn {
+  display: block;
+}
+.right-side-wrap .plustwo-side-btn .download {
+  display: block;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 160px;
+  height: 50px;
+  border-style: none;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+  background-color: white;
+}
+.right-side-wrap .plustwo-side-btn .share {
+  display: block;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 160px;
+  height: 50px;
+  border-style: none;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+  background-color: white;
+}
+.right-side-wrap .plustwo-side-btn .contact {
+  display: block;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 160px;
+  height: 50px;
+  border-style: none;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+  background-color: white;
+}
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .plustwo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .plustwo-header .orient {
+    width: 75px;
+    height: 60px;
+    margin-top: -20px;
+    padding: 0 30px 0 0;
+  }
+  .plustwo-header h4 {
+    font-size: 25px;
+    font-weight: 450;
+  }
+  .plustwo-result-search {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto 0 auto;
+  }
+  .plustwo-result-search .left-form-name {
+    display: inline-block;
+    margin: 10px 0 10px 0;
+  }
+  .plustwo-result-search .left-form-name input {
+    display: block;
+    border-radius: 20px;
+    border-style: none;
+    padding: 0.5vmax 3vmax;
+    width: 250px;
+    height: 30px;
+    font-size: 13px;
+    box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+    background-color: #f2f2f2;
+  }
+  .plustwo-result-search .middle-form-faculty {
+    display: inline-block;
+    margin: 10px 0 10px 0;
+  }
+  .plustwo-result-search .middle-form-faculty input {
+    display: block;
+    border-radius: 20px;
+    border-style: none;
+    padding: 0.5vmax 3vmax;
+    width: 250px;
+    height: 30px;
+    font-size: 13px;
+    box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+    background-color: #f2f2f2;
+  }
+  .plustwo-result-search .right-form-studentId {
+    display: inline-block;
+    margin: 10px 0 10px 0;
+  }
+  .plustwo-result-search .right-form-studentId input {
+    display: block;
+    border-radius: 20px;
+    border-style: none;
+    padding: 0.5vmax 3vmax;
+    width: 250px;
+    height: 30px;
+    font-size: 13px;
+    box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+    background-color: #f2f2f2;
+  }
+  .plustwo-search-icon .fa-search {
+    display: none;
+  }
+  .plustwo-search-button .search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+    border-radius: 20px;
+    border-style: none;
+    padding: 0.6vmax 3vmax;
+    width: 280px;
+    height: 35px;
+    font-size: 22px;
+    box-shadow: 0 0 2px 0 rgba(8, 8, 8, 0.2);
+    cursor: pointer;
+    color: white;
+    background-color: #1ad52f;
+  }
+  .right-side-wrap {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:  auto;
+  }
+  .right-side-wrap .plustwo-side-btn {
+    display: block;
+  }
+  .right-side-wrap .plustwo-side-btn .download {
+    display: block;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 160px;
+    height: 50px;
+    border-style: none;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+    background-color: white;
+  }
+  .right-side-wrap .plustwo-side-btn .share {
+    display: block;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 160px;
+    height: 50px;
+    border-style: none;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+    background-color: white;
+  }
+  .right-side-wrap .plustwo-side-btn .contact {
+    display: block;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 160px;
+    height: 50px;
+    border-style: none;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 0 2px 0 rgba(14, 13, 13, 0.2);
+    background-color: white;
+  }
+}
