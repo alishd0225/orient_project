@@ -1,97 +1,145 @@
-.formContainer {
+.signin-formContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  margin:40px auto;
 }
 .signin-form .signin-text {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 450;
-  color: #297ae6;
+  color: #2782FD;
   margin: 20px;
-  text-decoration-line: underline;
+  font-weight: 650;
 }
-.signin-form .input-field {
+.signin-form .signin-input-field {
   margin: 20px;
-  font-size: 18px;
-  color: #297ae6;
-}
-.input-field #email {
-  display: block;
-  border-radius: 20px;
-  outline: none;
-  border-style: none;
-  width: 30vw;
-  height: 6vh;
-  margin: 10px 0 0 0;
-  font-size: 18px;
-  padding: 0 2vw;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-}
-.input-field #password {
-  display: block;
-  border-radius: 20px;
-  outline: none;
-  border-style: none;
-  width: 30vw;
-  height: 6vh;
-  font-size: 18px;
-  padding: 0 2vw;
-  margin: 10px 0 0 0;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-}
-.input-field .signin-btn {
-  border-radius: 20px;
-  border-style: none;
-  background-color: #297ae6;
-  color: white;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
-  width: 10vw;
-  height: 5vh;
 }
-@media screen and (max-width:900px) and (min-width:300px) {
-    .formContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin:150px auto;
-      }
-      .signin-form .input-field {
-        margin: 25px;
-        font-size: 18px;
-      }
-      .input-field #email {
-        display: block;
-        border-radius: 20px;
-        outline: none;
-        border-style: none;
-        width: 45vw;
-        height: 5vh;
-        margin: 10px 0 0 0;
-        font-size: 15px;
-        padding: 0 5vw;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-      }
-      .input-field #password {
-        display: block;
-        border-radius: 20px;
-        outline: none;
-        border-style: none;
-        width:45vw;
-        height: 5vh;
-        font-size: 15px;
-        padding: 0 5vw;
-        margin: 10px 0 0 0;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
-      }
-      .input-field .signin-btn {
-        display: block;
-        font-size: 16px;
-        font-weight: 500;
-        width: 20vw;
-        height: 5vh;
-        padding: 0;
-      }
+.signin-input-field #email {
+  display: block;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  background-color: #EAEAEA;
+  width: 28vw;
+  height: 8vh;
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  padding: 0 2vw;
+}
+.signin-input-field #password {
+  display: block;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  background-color: #EAEAEA;
+  width: 28vw;
+  height: 8vh;
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  padding: 0 2vw;
+}
+.signin-input-field .signin-btn {
+  display: block;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #2782FD;
+  margin-top: 60px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  width: 32vw;
+  height: 8vh;
+}
+ .signin-navigate-textbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:60px auto;
+}
+.signin-formContainer .signin-navigate-textbtn p{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(54, 53, 53);
+}
+.signin-formContainer .signin-navigate-textbtn p span{
+  color: #35DB48;
+  cursor: pointer;
+}
+Header{
+  display: none;
+}
+@media screen and (max-width:700px) and (min-width:300px) {
+  .signin-formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:80px auto;
+  }
+  .signin-form .signin-text {
+    font-size: 35px;
+    font-weight: 450;
+    margin: 20px;
+    font-weight: 650;
+  }
+  .signin-form .signin-input-field {
+    margin: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .signin-input-field #email {
+    display: block;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    background-color: #EAEAEA;
+    width: 70vw;
+    height: 6vh;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    padding: 0 2vw;
+  }
+  .signin-input-field #password {
+    display: block;
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    background-color: #EAEAEA;
+    width: 70vw;
+    height: 6vh;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    padding: 0 2vw;
+  }
+  .signin-input-field .signin-btn {
+    display: block;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 70px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    width: 73.5vw;
+    height: 6vh;
+  }
+   .signin-navigate-textbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:80px auto;
+  }
+  .signin-formContainer .signin-navigate-textbtn p{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(54, 53, 53);
+  }
+  .signin-formContainer .signin-navigate-textbtn p span{
+    color: #35DB48;
+    cursor: pointer;
+  }
+  Header{
+    display: none;
+  }
       
 }

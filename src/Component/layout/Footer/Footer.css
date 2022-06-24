@@ -40,18 +40,25 @@
   .rightFooter p{
     margin-top:0 ;
   }
-  .rightFooter a{
-    margin-top: 0;
+  .rightFooter p a{
+    text-decoration: none;
+    color: white;
   }
+  .rightFooter p a:hover{
+    text-decoration: underline;
+  }
+
   .smallFooter {
     background-color: #1E5EB4;
     color: white;
     display: flex;
-    text-align:justify;
+    align-items: flex-end;
+    justify-content: end;
+    text-align:end;
    padding: 9px;
-   font: 300 1.4vmax "Roboto";
+   font: 300 1vmax "Roboto";
   }
-  @media screen and (max-width:900px) {
+  @media screen and (max-width:700px) and (min-width:300px){
     .largeFooter {
       padding: 1.7vmax;
       display: flex;

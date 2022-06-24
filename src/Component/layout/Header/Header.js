@@ -4,16 +4,20 @@ import orient from "./orient.png";
 import { Button } from "./Button";
 import { Link, useNavigate } from "react-router-dom";
 import { faRupiahSign } from "@fortawesome/free-solid-svg-icons";
+import profile from "./profile.png";
+import { useAuth } from "../../context/AuthContext";
 
 export default function () {
   const navigation = useNavigate(); // extract navigation prop here
+  const { currentUser, logout } = useAuth();
 
-  return <Header navigation={navigation} />; //pass to your component.
+  return (
+    <Header navigation={navigation} logout={logout} currentUser={currentUser} />
+  ); //pass to your component.
 }
 
 class Header extends Component {
   state = { clicked: false };
-
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
@@ -38,7 +42,7 @@ class Header extends Component {
           </li>
           <li className="nav-item">
             <Link
-              to="/apply"
+              to="/apply/"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
@@ -48,7 +52,7 @@ class Header extends Component {
           <li className="nav-item"></li>
           <li>
             <Link
-              to="/learning"
+              to="/learning/"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
@@ -57,7 +61,7 @@ class Header extends Component {
           </li>
           <li>
             <Link
-              to="/result"
+              to="/result/"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
@@ -66,7 +70,7 @@ class Header extends Component {
           </li>
           <li>
             <Link
-              to="/AboutOrient"
+              to="/AboutOrient/"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
@@ -74,22 +78,36 @@ class Header extends Component {
             </Link>
           </li>
           <li>
-            <Link
-              to="/signin"
-              className="nav-links-mobile"
-              onClick={this.closeMobileMenu}
+          {!this.props.currentUser &&  <Link
+              to="/signup/"
+              className="nav-links"
             >
-              Sign Up
-            </Link>
+              <div className="profile" >
+                <img
+                  src={profile}
+                  alt="Profile Picture"
+                  className="profile-image"
+                />
+              </div>
+            </Link>}
           </li>
+          {this.props.currentUser && (
+            <li className="nav-item">
+              <div className="nav-links">
+                <i
+                  class="fa fa-sign-out"
+                  aria-hidden="true"
+                  onClick={async (e) => {
+                    e.preventDefault();
+                    this.props.logout();
+                    this.props.navigation("/");
+                    console.log("Your are logged out now");
+                  }}
+                ></i>
+              </div>
+            </li>
+          )}
         </ul>
-        <Button
-          onClick={() => {
-            this.props.navigation("./signin");
-          }}
-        >
-          Sign Up
-        </Button>
       </nav>
     );
   }

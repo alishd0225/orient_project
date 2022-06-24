@@ -20,7 +20,7 @@
   border: none;
   align-self: flex-end;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width:700px) and (min-width:300px){
   .dialogStyles {
     position:absolute;
     left: 60%;

@@ -13,27 +13,30 @@ import PlusTwoReslt from "./Component/Result/+2Result/PlusTwoReslt";
 import { AlevelResult } from "./Component/Result/ALevelResult/AlevelResult";
 import SignIn from "./Component/layout/User/SignIn";
 import SignUp from "./Component/layout/User/SignUp";
+import AuthContextProvider from "./Component/context/AuthContext";
 
 function App() { 
     return (
       <div className="App">
+        <AuthContextProvider>
         <BrowserRouter>
           <Routes> 
             <Route path="/" element={<Home />} />
-            <Route path="/apply" element={<Apply />} />
-            <Route path="/apply/applied" element={<Applied />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/news" element={<NewsEvent />} />
-            <Route path="/learning" element={<Learning />} />
-            <Route path="/learning/library" element={<Library />} />
-            <Route path="/learning/pastpaper" element={<PastPaper />} />
-            <Route path="/result" element={<Result />} />
-            <Route path="result/+2result" element={<PlusTwoReslt />} />
-            <Route path="result/Alevelresult" element={<AlevelResult />} />
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/apply/" element={<Apply />} />
+            <Route path="/apply/applied/" element={<Applied />} />
+            <Route path="/gallery/" element={<Gallery />} />
+            <Route path="/news/" element={<NewsEvent />} />
+            <Route path="/learning/" element={<Learning />} />
+            <Route path="/learning/library/" element={<Library />} />
+            <Route path="/learning/pastpaper/" element={<PastPaper />} />
+            <Route path="/result/" element={<Result />} />
+            <Route path="/result/+2result/" element={<PlusTwoReslt />} />
+            <Route path="/result/Alevelresult/" element={<AlevelResult />} />
+            <Route path="/signin/" element={<SignIn />} />
+            <Route path="/signup/" element={<SignUp />} />
           </Routes>
         </BrowserRouter>
+        </AuthContextProvider>
       </div>
     );
   }

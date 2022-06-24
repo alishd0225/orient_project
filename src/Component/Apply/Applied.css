@@ -70,7 +70,7 @@
   .okay-btn:hover{
     background-color: #074aa3;
   }
-  @media screen and (max-width:900px) {
+  @media screen and (max-width:700px) and (min-width:300px){
     .bg-form{
       padding:  40px;
       width: 70%;
