@@ -4,7 +4,7 @@ import orient from "./orient.png";
 import { Button } from "./Button";
 import { Link, useNavigate } from "react-router-dom";
 import { faRupiahSign } from "@fortawesome/free-solid-svg-icons";
-import profile from "./profile.png";
+import profile from "./profile1.png";
 import { useAuth } from "../../context/AuthContext";
 
 export default function () {

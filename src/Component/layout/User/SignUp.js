@@ -43,7 +43,6 @@ const SignUp = () => {
                 })
                 .catch((error) => {
                   console.log(error.message);
-
                   toast({
                     description: error.message,
                     status: "error",

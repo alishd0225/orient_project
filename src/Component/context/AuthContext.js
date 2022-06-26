@@ -17,11 +17,11 @@ const AuthContext = createContext({
 export const useAuth = () => useContext(AuthContext);
 
 export default function AuthContextProvider({ children }) {
-  const [currentuser, setCurrentuser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setCurrentuser(user);
+      setCurrentUser(user);
     });
     return () => {
       unsubscribe();
@@ -41,7 +41,7 @@ export default function AuthContextProvider({ children }) {
   }
 
   const value = {
-    currentuser,
+    currentUser,
     register,
     login,
     logout,

@@ -14,7 +14,7 @@ const SignIn = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const { login } = useAuth();
-  const mounted=useMounted
+  const mounted=useMounted();
 
   return (
     <div>
@@ -40,7 +40,6 @@ const SignIn = () => {
               })
               .catch((error) => {
                 console.log(error.message);
-
                 toast({
                   description: error.message,
                   status: "error",
