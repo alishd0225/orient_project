@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import Home from "./Component/Home/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 import Apply from "./Component/Apply/Apply";
 import Applied from "./Component/Apply/Applied";
 import Gallery from "./Component/Gallery/Gallery";
@@ -13,14 +19,14 @@ import PlusTwoReslt from "./Component/Result/+2Result/PlusTwoReslt";
 import { AlevelResult } from "./Component/Result/ALevelResult/AlevelResult";
 import SignIn from "./Component/layout/User/SignIn";
 import SignUp from "./Component/layout/User/SignUp";
-import AuthContextProvider from "./Component/context/AuthContext";
+import AuthContextProvider, { useAuth } from "./Component/context/AuthContext";
 
-function App() { 
-    return (
-      <div className="App">
-        <AuthContextProvider>
+export default function App() {
+  return (
+    <div className="App">
+      <AuthContextProvider>
         <BrowserRouter>
-          <Routes> 
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/apply/" element={<Apply />} />
             <Route path="/apply/applied/" element={<Applied />} />
@@ -32,13 +38,27 @@ function App() {
             <Route path="/result/" element={<Result />} />
             <Route path="/result/+2result/" element={<PlusTwoReslt />} />
             <Route path="/result/Alevelresult/" element={<AlevelResult />} />
-            <Route path="/signin/" element={<SignIn />} />
-            <Route path="/signup/" element={<SignUp />} />
           </Routes>
+          <ProtectedRoute path="/signin/" element={<SignIn />} />
+          <ProtectedRoute path="/signup/" element={<SignUp />} />
         </BrowserRouter>
-        </AuthContextProvider>
-      </div>
+      </AuthContextProvider>
+    </div>
+  );
+}
+
+function ProtectedRoute(props) {
+  const { currentUser } = useAuth();
+  const location = useLocation();
+  const { path } = props;
+
+  if (path === "/signup/" || path === "/signin/") {
+    return currentUser ? (
+      <Navigate to={location.state?.from ?? "/"} />
+    ) : (
+      <Routes>
+        <Route {...props} />
+      </Routes>
     );
   }
-
-export default App;
+}

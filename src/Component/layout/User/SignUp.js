@@ -1,13 +1,14 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { useToast } from "@chakra-ui/react";
 import useMounted from "../Hooks/useMounted";
 
 const SignUp = () => {
   const navigate = useNavigate();
+  const location=useLocation();
   const toast = useToast();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -39,7 +40,7 @@ const SignUp = () => {
               register(email, password)
                 .then((response) => {
                   console.log(response);
-                  navigate("/");
+                  navigate(location.state?.from ?? "/");
                 })
                 .catch((error) => {
                   console.log(error.message);
