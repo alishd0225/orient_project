@@ -1,7 +1,6 @@
 import React, { Component, useState } from "react";
 import "./Header.css";
 import orient from "./orient.png";
-import { Button } from "./Button";
 import { Link, useNavigate } from "react-router-dom";
 import { faRupiahSign } from "@fortawesome/free-solid-svg-icons";
 import profile from "./profile1.png";
@@ -42,7 +41,7 @@ class Header extends Component {
           </li>
           <li className="nav-item">
             <Link
-              to="/apply/"
+              to="/academicProgram/"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
@@ -79,7 +78,7 @@ class Header extends Component {
           </li>
           <li>
           {!this.props.currentUser &&  <Link
-              to="/signup/"
+              to="/signup"
               className="nav-links"
             >
               <div className="profile" >

@@ -1,37 +1,53 @@
 .dialogStyles {
-  width: 210px;
-  height: 180px;
+  display: inline-block;
+  align-items: center;
+  justify-content: end;
+  margin: auto;
   position: absolute;
-  left: 89%;
-  top: 85%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  background-color: #ffffff;
-  padding: 10px 10px 15px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px 2px 3px 2px rgba(7, 6, 6, 0.2);
+  margin-top: 100px;
+  transform: (-50%, -50%);
+  width: 15vw;
+  height: 30vh;
+  border-radius: 20px;
+  right: 120px;
+  top: 400px;
+  background-color: white;
+  box-shadow: 0 0 8px 0 rgba(4, 4, 4, 0.2);
+  margin: auto;
+  padding: 0.5rem;
 }
-.dialogCloseButton {
+.dialogStyles .dialogCloseButton {
+  display: block;
+  justify-content: end;
+  margin: auto 0 auto 13vw;
+  text-align: end;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   background-color: #ffffff;
+  outline: none;
+  border-style: none;
   border: none;
-  align-self: flex-end;
 }
-@media screen and (max-width:700px) and (min-width:300px){
+@media screen and (max-width: 700px) and (min-width: 300px) {
   .dialogStyles {
-    position:absolute;
-    left: 60%;
-    top: 130%;
-
+    display: inline-block;
+    align-items: center;
+    justify-content: end;
+    margin: auto;
+    position: absolute;
+    margin-top: 100px;
+    width: 35vw;
+    height: 30vh;
+    right: 70px;
+    top: 1000px;
+    margin: auto;
+    padding: 0.5rem;
   }
-  .dialogCloseButton {
-    display: flex;
-    font-size: 15px;
-    background-color: #ffffff;
-    border: none;
-    align-self: flex-end;
+  .dialogStyles .dialogCloseButton {
+    display: block;
+    justify-content: end;
+    margin: auto 0 auto 30vw;
+    text-align: end;
+    cursor: pointer;
   }
 }

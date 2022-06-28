@@ -1,106 +1,133 @@
-.bg-image img {
+.top-alignment-home {
   display: flex;
-  width: 50%;
-  float: left;
-  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.top-alignment-home .bg-image .orient-college {
+  display: block;
+  justify-content: start;
+  margin-top: 20px;
+  width: 52vw;
+  height: 95vh;
 }
 .slideShow {
-  display: flexbox;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
-.slideShow img {
-  width: 40%;
-  margin-left: 85px;
-  margin-top: 15vh;
+.slideShow .registration-template {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 42vh;
+  margin: auto;
 }
 .blockquote {
-  position: relative;
-  margin-left: 58%;
+  display: block;
+  align-items: center;
+  justify-content: start;
 }
 .blockquote:before {
-  position: absolute;
   font-family: "FontAwesome";
-  top: 5px;
   content: "\f10d";
-  font-size: 50px;
+  font-size: 40px;
+  margin: auto;
   color: rgb(0, 0, 0);
 }
 .blockquote p {
   font-family: "Roboto";
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 600px;
+  margin-top: -10px;
   text-align: center;
-  margin-left: 10%;
-  padding: 35px 0;
 }
-.slideShow button {
-  background-color: rgb(254, 254, 254);
-  color: rgb(7, 7, 7);
-  display: flex;
+.slideShow .about-us{
+  display: block;
   align-items: center;
   justify-content: center;
+  margin: auto;
+  border: 2px solid black;
+  background-color: white;
+  margin-top: 70px;
   font-weight: 600;
-  font-size: 22px;
-  padding: 8px 50px;
+  font-size: 20px;
+  width: 15vw;
+  height: 6vh;
   border-radius: 8px;
-  margin-left: 70%;
   cursor: pointer;
 }
 .slideShow button:hover {
   background-color: #297ae6;
   color: white;
-  border-color: white;
+  border-style: none;
 }
 .popUp {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+  margin: auto 70px;
   font-size: 13px;
   font-family: Helvetica Neue;
   color: #297ae6;
 }
 .popUp img {
   width: 40px;
-  margin-left: 90%;
   cursor: pointer;
 }
 .popUp p {
+  display: block;
   color: #191818;
   font-size: 12px;
 }
-.academicProgram {
-  margin-top: 100px;
+.program {
+  display: flex;
 }
-.academicProgram h1 {
+.academicProgram {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+.academicProgram .text-align {
+  display: block;
+  justify-content: center;
+  text-align: center;
   font-size: 60px;
   font-family: Lucida Sans;
-  text-align: center;
 }
-.container {
+.academicProgram .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 20px;
+}
+.academicProgram .container .plusTwoProgram {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
+  margin: auto 40px 0 0;
 }
-.container .plusTwoProgram {
-  margin-right: 50px;
-}
-.container .plusTwoProgram h4 {
+.academicProgram .container .plusTwoProgram .plusTwo {
   margin-left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
 }
-.container .plusTwoProgram img {
+.academicProgram .container .plusTwoProgram .orientLogo {
   margin-top: 25px;
   margin-left: 30px;
   width: 120px;
 }
-.container .plusTwoProgram p {
+.academicProgram .container .plusTwoProgram .header-text {
   font-size: 20px;
   color: #525252;
   margin-left: 30px;
   font-family: Apple Braille;
 }
-.container .plusTwoProgram ul {
+.academicProgram .container .plusTwoProgram ul {
   list-style: none;
   font-size: 15px;
   font-weight: 500;
@@ -109,7 +136,7 @@
   margin-top: -20px;
 }
 
-.container .plusTwoProgram ul li::before {
+.academicProgram .container .plusTwoProgram ul li::before {
   content: "\2022";
   margin-bottom: 50px;
   padding-right: 20px;
@@ -119,44 +146,44 @@
   font-size: 35px;
   width: 100px;
 }
-.container .plusTwoProgram button {
-  margin-left: 65%;
+.academicProgram .container .plusTwoProgram button {
+  display: block;
   background-color: #1fc32c;
   border-style: none;
   border-radius: 30px;
+  margin: auto 0 auto 20vw;
+  width: 12vw;
+  height: 6vh;
   color: rgb(250, 248, 248);
-  font-size: 20 px;
-  font-weight: 600;
-  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
 }
-.container .A_level {
-  margin-left: 50px;
+.academicProgram .container .A_level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 0 40px;
 }
-.container .A_level h4 {
+
+.academicProgram .container .A_level h4 {
   margin-left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
 }
-.container .A_level img {
+.academicProgram .container .A_level img {
   margin-left: 30px;
   margin-top: 25px;
-  width: 70px;
+  width: 220px;
 }
-.container .A_level h5 {
-  color: black;
-  display: flex;
-  justify-content: center;
-  margin-top: -18%;
-  margin-left: 25%;
-  font: 400 2.6vmax solid;
-}
-.container .A_level p {
+.academicProgram .container .A_level p {
   font-size: 20px;
   color: #525252;
   margin-left: 30px;
   font-family: Apple Braille;
-  margin-top: -30px;
 }
-.container .A_level ul {
+.academicProgram .container .A_level ul {
   list-style: none;
   font-size: 15px;
   font-weight: 500;
@@ -164,7 +191,7 @@
   margin-left: 20px;
   margin-top: -20px;
 }
-.container .A_level ul li::before {
+.academicProgram .container .A_level ul li::before {
   content: "\2022";
   margin-bottom: 50px;
   padding-right: 20px;
@@ -174,80 +201,96 @@
   font-size: 35px;
   width: 100px;
 }
-.container .A_level button {
-  margin-left: 65%;
+.academicProgram .container .A_level button {
+  display: block;
   background-color: #e43d4d;
   border-style: none;
   border-radius: 30px;
+  margin: auto 0 auto 20vw;
   color: rgb(250, 248, 248);
-  font-size: 20 px;
-  font-weight: 600;
-  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 12vw;
+  height: 6vh;
   cursor: pointer;
 }
 .memoriesOfExcellence {
-  display: inline-table;
-  margin: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto auto 0;
 }
-.memoriesOfExcellence h1 {
-  margin-top: 100px;
+
+.memoriesOfExcellence .ex-memories {
+  display: block;
+  text-align: center;
   font-size: 60px;
   font-family: Lucida Sans;
-  text-align: center;
 }
-.memoriesOfExcellence .upDownImage {
-  display: inline-block;
-  vertical-align: top;
+.memoriesOfExcellence .all-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.memoriesOfExcellence .entertainment {
-  width: 25vmax;
-  height: 16vmax;
-  display: inline-block;
-  margin: 10px;
-}
-.memoriesOfExcellence .travels {
+.memoriesOfExcellence .all-images .upDownImage {
   display: block;
-  width: 25vmax;
-  height: 16vmax;
-  margin: 10px;
-  margin-top: 25px;
+}
+.memoriesOfExcellence .upDownImage .entertainment {
+  display: inline-block;
+  width: 26vw;
+  height: 37vh;
+  margin: auto 10px 10px 0;
+}
+.memoriesOfExcellence .upDownImage .travels {
+  display: block;
+  width: 26vw;
+  height: 37vh;
+  margin: 10px 10px auto 0;
 }
 .memoriesOfExcellence .study {
   display: inline-block;
-  width: 36vmax;
-  height: 35vmax;
-  margin: 10px;
+  width: 35vw;
+  height: 78vh;
+  margin: auto 10px auto 10px;
 }
 .memoriesOfExcellence .basketball {
   display: inline-block;
-  vertical-align: top;
-  width: 30vmax;
-  height: 35vmax;
-  margin: 10px;
+  width: 25vw;
+  height: 78vh;
+  margin: auto 0 auto 10px;
 }
 .collegeBuilding {
-  display: inline-block;
-  vertical-align: top;
-  margin: 40px;
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 50px;
 }
 .collegeBuilding .building {
-  width: 50vmax;
-  display: inline;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px auto 0;
+  width: 60vw;
+  height: 90vh;
 }
 .collegeBuilding .location {
-  display: inline;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 .collegeBuilding .location .map {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 84px;
-  width: 36vmax;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 30px auto;
+  width: 36vw;
+  height: 45vh;
 }
 .collegeBuilding .location button {
   display: block;
-  margin-top: -25%;
-  float: right;
+  justify-content: center;
+  margin: 0 auto 40px auto;
   width: 36vw;
   height: 8vh;
   background-color: #12a4ff;
@@ -256,35 +299,36 @@
   color: rgb(250, 248, 248);
   font-size: 20px;
   font-weight: 500;
-  padding: 10px 20px;
   cursor: pointer;
 }
 .collegeBuilding .location h5 {
-  display: inline;
-  margin-right: 270px;
-  float: right;
-  margin-top: -12%;
+  display: block;
+  justify-content: center;
+  margin: 0 auto 30px auto;
   font-size: 25px;
   color: #0a63cb;
 }
 .collegeBuilding .location .address {
-  display: inline;
-  margin-right: 220px;
-  float: right;
-  margin-top: -6%;
+  display: block;
+  justify-content: center;
+  margin: 0 auto 20px auto;
   font-size: 20px;
 }
 .collegeBuilding .location .phone {
-  display: inline;
-  margin-right: 178px;
-  float: right;
-  margin-top: -3%;
+  display: block;
+  justify-content: center;
+  margin: auto;
+
   font-size: 20px;
 }
 .talkShow {
   display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 .talkShow h1 {
+  display: block;
   font-size: 60px;
   font-family: Lucida Sans;
   text-align: center;
@@ -292,277 +336,339 @@
 .talkShow h1 span {
   color: #1fc32c;
 }
-.youtube-video {
-  overflow: hidden;
+.talkShow .youtube-video {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 56.25%;
-  position: relative;
-  margin: 0 30px 0 30px;
+  margin: auto;
 }
-
-.youtube-video iframe {
-  position: absolute;
+.talkShow .youtube-video .video {
+  margin: 0;
+  padding: 0;
+  width: 90vw;
+  height: 90vh;
   border-radius: 20px;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  border: 0;
 }
-@media screen and (max-width:700px) and (min-width:300px) {
-  .bg-image img {
-    display: flex;
-    align-items: flex-start;
+@media screen and (max-width: 700px) and (min-width: 300px) {
+  .top-alignment-home {
+    display: block;
     justify-content: center;
-    width: 100%;
-    float: none;
-    margin-top: 10vh;
+    align-items: center;
+    margin: auto;
   }
-  .slideShow img {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+  .top-alignment-home .bg-image .orient-college {
+    display: block;
     width: 100%;
-    margin-left: 0;
-    margin-top: 5vh;
   }
-  .blockquote {
-    position: relative;
-    margin-left: 0;
-    margin: 5%;
+  .slideShow {
+    display: block;
+    margin: auto;
+  }
+  .slideShow .registration-template {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
   }
   .blockquote:before {
     font-family: "FontAwesome";
-    top: 6px;
     content: "\f10d";
     font-size: 30px;
+    margin: auto;
     color: rgb(0, 0, 0);
   }
   .blockquote p {
-    font-size: 2.7vmax;
-    font-weight: 500px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600px;
+    margin-top: -10px;
     text-align: center;
-    margin-left: 3vmax;
-    padding: 15px 0;
   }
-  .slideShow button {
+  .slideShow .about-us{
     display: none;
+  }
+  .popUp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+    font-size: 11px;
+    font-weight: 500;
   }
   .popUp img {
-    position: absolute;
-    right: 10%;
+    width: 60px;
+    cursor: pointer;
   }
-  .academicProgram h1 {
-    font-size: 40px;
+  .popUp p {
+    display: block;
+    color: #191818;
+    font-size: 11px;
   }
-  .container {
+  .program {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .academicProgram {
     display: block;
     align-items: center;
-    margin: 0;
-    font-size: 30px;
-    color: white;
+    justify-content: center;
+    margin: 50px auto;
   }
-  .container .plusTwoProgram {
-    margin-left: 0;
+  .academicProgram .text-align {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+  }
+  .academicProgram .container {
+    display: inline-block;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
+    margin: auto;
   }
-  .container .plusTwoProgram div {
-    width: 55vmax;
-    height: 450px;
+  .academicProgram .container .plusTwoProgram {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: start;
   }
-  .container .plusTwoProgram h4 {
-    margin-left: 4vmax;
+  .academicProgram .container .plusTwoProgram .box1 {
+    width: 90vw;
+    height: 60vh;
   }
-  .container .plusTwoProgram img {
-    width: 80px;
+  .academicProgram .container .plusTwoProgram .box1 .box2 {
+    width: 90vw;
+    height: 60vh;
   }
-  .container .plusTwoProgram p {
-    font-size: 14px;
+  .academicProgram .container .plusTwoProgram .plusTwo {
+    margin-left: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
   }
-  .container .plusTwoProgram ul {
-    font-size: 12px;
+  .academicProgram .container .plusTwoProgram .orientLogo {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 70px;
+  }
+  .academicProgram .container .plusTwoProgram .header-text {
+    font-size: 16px;
+    color: #525252;
+    margin-left: 30px;
+  }
+  .academicProgram .container .plusTwoProgram ul {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
     color: black;
+    margin-left: 20px;
     margin-top: -20px;
-    margin-right: 10px;
   }
 
-  .container .plusTwoProgram ul li::before {
-    padding-right: 20px;
+  .academicProgram .container .plusTwoProgram ul li::before {
+    content: "\2022";
+    margin-bottom: 50px;
+    color: #1fc32c;
+    font-weight: bold;
+    margin-left: -1em;
     font-size: 30px;
-    width: 100px;
+    width: 50px;
   }
-  .container .plusTwoProgram button {
-    display: flex;
-    margin-left: 30vmax;
-    border-radius: 25px;
-    border-style: none;
-    font-size: 14 px;
-    font-weight: 600;
-    padding: 8px 40px;
+  .academicProgram .container .plusTwoProgram button {
+    width: 25vw;
+    height: 6vh;
+    margin: auto 0 auto 55vw;
+    font-size: 16px;
     cursor: pointer;
   }
-  .container .A_level {
-  align-items: center;
-  justify-content: start;
-    margin-top: 100px;
-    margin-left: 0;
-  }
-  .container .A_level div {
-    width: 55vmax;
-    height: 450px;
-  }
-  .container .A_level h4 {
-    margin-left: 4vmax;
-  }
-  .container .A_level img {
-    width: 60px;
-  }
-  .container .A_level h5 {
+  .academicProgram .container .A_level {
+    display:inline-block;
+    align-items: center;
     justify-content: center;
-    margin-top: -14%;
-    margin: 10x;
-    font: 500 3.9vmax solid;
+    margin: 50px auto;
+    text-align: start;
+
   }
-  .container .A_level p {
-    font-size: 14px;
+  .academicProgram .container .A_level .box3 {
+    width: 90vw;
+    height: 60vh;
   }
-  .container .A_level ul {
-    font-size: 12px;
-    color: black;
-    margin-top: -20px;
-    margin-right: 10px;
+  .academicProgram .container .A_level .box3 .box4 {
+    width: 90vw;
+    height: 60vh;
   }
-  .container .A_level ul li::before {
-    padding-right: 20px;
-    font-size: 30px;
-    width: 100px;
-  }
-  .container .A_level button {
-    display: flex;
-    margin-left: 30vmax;
-    border-radius: 25px;
-    border-style: none;
-    font-size: 14 px;
+  .academicProgram .container .A_level h4 {
+    margin-left: 30px;
+    color: white;
+    font-size: 25px;
     font-weight: 600;
-    padding: 8px 40px;
+  }
+  .academicProgram .container .A_level img {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 140px;
+  }
+  .academicProgram .container .A_level p {
+    font-size: 16px;
+    color: #525252;
+    margin-left: 30px;
+  }
+  .academicProgram .container .A_level ul {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+  .academicProgram .container .A_level ul li::before {
+    content: "\2022";
+    margin-bottom: 50px;
+    padding-right: 20px;
+    color: #e43d4d;
+    font-weight: bold;
+    margin-left: -1em;
+    font-size: 30px;
+    width: 50px;
+  }
+  .academicProgram .container .A_level button {
+    width: 25vw;
+    height: 6vh;
+    margin: auto 0 auto 55vw;
+    font-size: 16px;
     cursor: pointer;
   }
-  .memoriesOfExcellence h1 {
-    font-size: 40px;
+  .memoriesOfExcellence {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto auto 0;
   }
-  .memoriesOfExcellence img {
+
+  .memoriesOfExcellence .ex-memories {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-family: Lucida Sans;
+  }
+  .memoriesOfExcellence .all-images {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .memoriesOfExcellence .all-images .upDownImage {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
-  .memoriesOfExcellence .entertainment {
-    width: 40vmax;
-    height: 20vmax;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0;
+  .memoriesOfExcellence .upDownImage .entertainment {
+    display: flex;
+    width: 45vw;
+    height: 30vh;
+    border-radius: 20px;
+    margin: auto;
   }
-  .memoriesOfExcellence .travels {
-    display: block;
-    width: 40vmax;
-    height: 20vmax;
-    border-radius: 10px;
-    margin: 0;
+  .memoriesOfExcellence .upDownImage .travels {
+    display: flex;
+    width: 45vw;
+    height: 30vh;
+    border-radius: 20px;
+    margin: auto;
   }
   .memoriesOfExcellence .study {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 40vh;
+    margin: 20px auto;
+    border-radius: 20px;
   }
   .memoriesOfExcellence .basketball {
-    display: inline-block;
-    border-radius: 10px;
-    vertical-align: top;
-    width: 40vmax;
-    height: 45vmax;
-    margin: 0;
-  }
-  .collegeBuilding {
-    display: inline-block;
-    vertical-align: top;
+    display: none;
   }
   .collegeBuilding {
     display: block;
-    margin: 0;
-    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
   }
   .collegeBuilding .building {
-    width: 100%;
     display: block;
+    justify-content: center;
     align-items: center;
-    justify-content: start;
-    margin: 0;
+    margin: auto;
+    width: 100%;
   }
   .collegeBuilding .location {
     display: block;
     align-items: center;
-    justify-content: start;
-    width: 100%;
-    margin: 0;
+    justify-content: center;
+    margin: auto;
   }
   .collegeBuilding .location .map {
-    display: block;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    margin-top: 20px;
-    width: 100%;
-    margin-left: 0;
+    margin: 30px auto 30px auto;
+    width: 90%;
   }
   .collegeBuilding .location button {
     display: block;
-    align-items: center;
     justify-content: center;
-    margin: 0;
-    float: none;
-    margin-top: 20px;
-    width: 100%;
-    height: 8vh;
-    border-radius: 10px;
-    border-style: none;
-    color: rgb(250, 248, 248);
+    margin: 0 auto 40px auto;
+    width: 90%;
+    cursor: pointer;
   }
   .collegeBuilding .location h5 {
     display: block;
-    align-items: center;
-    justify-self: center;
-    margin: 0;
-    margin-top: 50px;
-    margin-right: 0;
-    float: none;
-    font-size: 25px;
+    justify-content: center;
+    width: 90%;
+    font-size: 18px;
   }
   .collegeBuilding .location .address {
     display: block;
-    align-items: center;
-    justify-self: center;
-    margin: 0;
-    margin-right: 0;
-    float: none;
-    font-size: 18px;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    font-size: 15px;
   }
   .collegeBuilding .location .phone {
     display: block;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    font-size: 15px;
+  }
+  .talkShow {
+    display: block;
+    justify-content: center;
     align-items: center;
-    justify-self: center;
-    margin: 0;
-    margin-right: 0;
-    float: none;
-    font-size: 18px;
+    margin: auto;
   }
   .talkShow h1 {
-    font-size: 50px;
+    display: block;
+    font-size: 40px;
+    font-family: Lucida Sans;
+    text-align: center;
   }
-  .talkShow img {
-    width: 100%;
+  .talkShow h1 span {
+    color: #1fc32c;
+  }
+  .talkShow .youtube-video {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
+  }
+  .talkShow .youtube-video .video {
     margin: 0;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 0;
+    width: 90vw;
+    height: 30vh;
   }
 }

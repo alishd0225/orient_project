@@ -4,8 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Navigate,
-  useLocation,
 } from "react-router-dom";
 import Apply from "./Component/Apply/Apply";
 import Applied from "./Component/Apply/Applied";
@@ -19,7 +17,10 @@ import PlusTwoReslt from "./Component/Result/+2Result/PlusTwoReslt";
 import { AlevelResult } from "./Component/Result/ALevelResult/AlevelResult";
 import SignIn from "./Component/layout/User/SignIn";
 import SignUp from "./Component/layout/User/SignUp";
-import AuthContextProvider, { useAuth } from "./Component/context/AuthContext";
+import AuthContextProvider from "./Component/context/AuthContext";
+import ProtectedRoute from "./Component/Route/ProtectedRoute";
+import AcademicProgram from "./Component/AcademicProgram/AcademicProgram";
+import PlusTwoap from "./Component/AcademicProgram/+2academicProgram/PlusTwoap";
 
 export default function App() {
   return (
@@ -38,27 +39,15 @@ export default function App() {
             <Route path="/result/" element={<Result />} />
             <Route path="/result/+2result/" element={<PlusTwoReslt />} />
             <Route path="/result/Alevelresult/" element={<AlevelResult />} />
+            <Route path="/academicProgram/" element={<AcademicProgram/>}/>
+            <Route path="/academicProgram/+2program" element={<PlusTwoap/>}/>
+           
           </Routes>
-          <ProtectedRoute path="/signin/" element={<SignIn />} />
-          <ProtectedRoute path="/signup/" element={<SignUp />} />
+          <ProtectedRoute path="/signin" element={<SignIn />} />
+          <ProtectedRoute path="/signup" element={<SignUp />} />
         </BrowserRouter>
       </AuthContextProvider>
     </div>
   );
 }
 
-function ProtectedRoute(props) {
-  const { currentUser } = useAuth();
-  const location = useLocation();
-  const { path } = props;
-
-  if (path === "/signup/" || path === "/signin/") {
-    return currentUser ? (
-      <Navigate to={location.state?.from ?? "/"} />
-    ) : (
-      <Routes>
-        <Route {...props} />
-      </Routes>
-    );
-  }
-}

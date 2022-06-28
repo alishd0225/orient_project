@@ -101,7 +101,7 @@ const SignUp = () => {
             {" "}
             <p>
               Already have an account?{" "}
-              <span onClick={() => navigate("/signin/")}>Sign in</span>
+              <span onClick={() => navigate("/signin")}>Sign in</span>
             </p>
           </div>
         </form>

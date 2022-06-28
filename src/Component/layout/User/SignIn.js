@@ -79,7 +79,7 @@ const location=useLocation();
               Don't have an account?{" "}
               <span
                 onClick={() => {
-                  navigate("/signup/");
+                  navigate("/signup");
                 }}
               >
                 Sign up

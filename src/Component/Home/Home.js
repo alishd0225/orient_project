@@ -3,7 +3,7 @@ import "./Home.css";
 import landingPageBackground from "../../images/landingPageBackground.png";
 import slideShow from "../../images/slideShow.png";
 import notice from "../../images/notice.png";
-import campbridgeLogo from "../../images/campbridgeLogo.jpg";
+import campbridgeLogo from "../../images/university.png";
 import orientLogo from "../../images/orient.jpg";
 import basketball from "../../images/basketball.jpg";
 import entertainment from "../../images/entertainment.jpg";
@@ -31,138 +31,166 @@ class Home extends Component {
     return (
       <>
         <Header />
-        <div className="bg-image">
-          <img src={landingPageBackground} alt="landingPage" />
-        </div>
-        <div className="slideShow">
-          <img src={slideShow} alt="slideShow" />
-          <blockquote className="blockquote">
-            <p>
-              Orient college aims to provide the best education for excellence
-              of the students{" "}
-            </p>
-          </blockquote>
-          <button>About us</button>
-        </div>
-        <div className="popUp">
-          <img
-            src={notice}
-            alt="notice"
-            onClick={(e) => this.setState({ isOpen: true })}
-          />
-          <Dialog
-            isOpen={this.state.isOpen}
-            onClose={(e) => this.setState({ isOpen: false })}
-          >
-            Pre Registration Open for +2 and A-Levels for academic session
-            2078/2079
-            <p>
-              Orient College announces Pre Registration Open for +2 and A-Levels
-              for academic session 2078/079. Orient college is one of the top
-              college inside Kathmandu valley focusing mainly on science,
-              management and A-Levels faculty.
-            </p>
-          </Dialog>
-        </div>
-        <div className="academicProgram">
-          <h1>Our Academic Programs</h1>
-          <div className="container">
-            <div className="plusTwoProgram">
-              <Box
-                component="div"
-                sx={{
-                  width: 500,
-                  height: 550,
-                  boxShadow: 10,
-                  borderRadius: 8,
-                  backgroundColor: "#1FC32C",
-                }}
-              >
-                <h4>+2 Program</h4>
-                <Box
-                  component="div"
-                  sx={{
-                    width: 500,
-                    height: 500,
-                    boxShadow: 10,
-                    marginTop: 5,
-                    borderRadius: 8,
-                    backgroundColor: "white",
-                  }}
-                >
-                  <img src={orientLogo} alt="Orient Logo" />
-                  <p>Get the best education for the best of you </p>
-                  <ul>
-                    <li>Academic excellence at it's Peak</li>
-                    <li>Get to learn from the very best teacher of the fied</li>
-                    <li>Physics,Chemistry and Biology lab facility</li>
-                    <li>
-                      Learn to undertake individual projects and to work as part
-                      of them
-                    </li>
-                    <li>Events and sports help every year for students</li>
-                  </ul>
-                  <button>Register now</button>
-                </Box>
-              </Box>
-            </div>
-            <div className="A_level">
-              <Box
-                component="div"
-                sx={{
-                  width: 500,
-                  height: 550,
-                  boxShadow: 10,
-                  borderRadius: 8,
-                  backgroundColor: "#E43D4D",
-                }}
-              >
-                <h4>A-Level</h4>
-                <Box
-                  component="div"
-                  sx={{
-                    width: 500,
-                    height: 500,
-                    boxShadow: 10,
-                    marginTop: 5,
-                    borderRadius: 8,
-                    backgroundColor: "white",
-                  }}
-                >
-                  <img src={campbridgeLogo} alt="campbridge logo" />
-                  <h5>University Of Campbridge</h5>
-                  <p>Get the best education for the best of you </p>
-                  <ul>
-                    <li>Academic excellence at it's Peak</li>
-                    <li>Get to experience Uk gold standard courses</li>
-                    <li>Get recognized internationally by your experience</li>
-                    <li>
-                      Learn to undertake individual projects and to work as part
-                      of them
-                    </li>
-                    <li>
-                      Become qualified and accepted as a university student
-                    </li>
-                  </ul>
-                  <button>Register now</button>
-                </Box>
-              </Box>
-            </div>
-          </div>
-        </div>
-        <div className="memoriesOfExcellence">
-          <h1>Memories Of Excellence</h1>
-          <div className="upDownImage">
+        <div className="top-alignment-home">
+          <div className="bg-image">
             <img
-              src={entertainment}
-              alt="Entertainment"
-              className="entertainment"
+              src={landingPageBackground}
+              alt="landingPage"
+              className="orient-college"
             />
-            <img src={Travels} alt="Travels" className="travels" />
           </div>
-          <img src={Study} alt="Study" className="study" />
-          <img src={basketball} alt="Basketball" className="basketball" />
+          <div className="slideShow">
+            <img
+              src={slideShow}
+              alt="slideShow"
+              className="registration-template"
+            />
+            <blockquote className="blockquote">
+              <p>
+                Orient college aims to provide the best education for excellence
+                of the students{" "}
+              </p>
+            </blockquote>
+            <button className="about-us">About us</button>
+            <div className="popUp">
+              <img
+                src={notice}
+                alt="notice"
+                onClick={(e) => this.setState({ isOpen: true })}
+              />
+              <Dialog
+                isOpen={this.state.isOpen}
+                onClose={(e) => this.setState({ isOpen: false })}
+              >
+                Pre Registration Open for +2 and A-Levels for academic session
+                2078/2079
+                <p>
+                  Orient College announces Pre Registration Open for +2 and
+                  A-Levels for academic session 2078/079. Orient college is one
+                  of the top college inside Kathmandu valley focusing mainly on
+                  science, management and A-Levels faculty.
+                </p>
+              </Dialog>
+            </div>
+          </div>
         </div>
+
+        <div className="program">
+          <div className="academicProgram">
+            <h1 className="text-align">Our Academic Programs</h1>
+            <div className="container">
+              <div className="plusTwoProgram">
+                <Box
+                  component="div"
+                  className="box1"
+                  sx={{
+                    width: 500,
+                    height: 550,
+                    boxShadow: 10,
+                    borderRadius: 8,
+                    backgroundColor: "#1FC32C",
+                  }}
+                >
+                  <h4 className="plusTwo">+2 Program</h4>
+                  <Box
+                    component="div"
+                    className="box2"
+                    sx={{
+                      width: 500,
+                      height: 500,
+                      boxShadow: 10,
+                      marginTop: 5,
+                      borderRadius: 8,
+                      backgroundColor: "white",
+                    }}
+                  >
+                    <img
+                      src={orientLogo}
+                      alt="Orient Logo"
+                      className="orientLogo"
+                    />
+                    <p className="header-text">
+                      Get the best education for the best of you{" "}
+                    </p>
+                    <ul>
+                      <li>Academic excellence at it's Peak</li>
+                      <li>
+                        Get to learn from the very best teacher of the fied
+                      </li>
+                      <li>Physics,Chemistry and Biology lab facility</li>
+                      <li>
+                        Learn to undertake individual projects and to work as
+                        part of them
+                      </li>
+                      <li>Events and sports help every year for students</li>
+                    </ul>
+                    <button>Register now</button>
+                  </Box>
+                </Box>
+              </div>
+              <div className="A_level">
+                <Box
+                  component="div"
+                  className="box3"
+                  sx={{
+                    width: 500,
+                    height: 550,
+                    boxShadow: 10,
+                    borderRadius: 8,
+                    backgroundColor: "#E43D4D",
+                  }}
+                >
+                  <h4>A-Level</h4>
+                  <Box
+                    component="div"
+                    className="box3"
+                    sx={{
+                      width: 500,
+                      height: 500,
+                      boxShadow: 10,
+                      marginTop: 5,
+                      borderRadius: 8,
+                      backgroundColor: "white",
+                    }}
+                  >
+                    <img src={campbridgeLogo} alt="campbridge logo" />
+                    <p>Get the best education for the best of you </p>
+                    <ul>
+                      <li>Academic excellence at it's Peak</li>
+                      <li>Get to experience Uk gold standard courses</li>
+                      <li>Get recognized internationally by your experience</li>
+                      <li>
+                        Learn to undertake individual projects and to work as
+                        part of them
+                      </li>
+                      <li>
+                        Become qualified and accepted as a university student
+                      </li>
+                    </ul>
+                    <button>Register now</button>
+                  </Box>
+                </Box>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="memoriesOfExcellence">
+          <h1 className="ex-memories">Memories Of Excellence</h1>
+          <div className="all-images">
+            <div className="upDownImage">
+              <img
+                src={entertainment}
+                alt="Entertainment"
+                className="entertainment"
+              />
+              <img src={Travels} alt="Travels" className="travels" />
+            </div>
+            <img src={Study} alt="Study" className="study" />
+            <img src={basketball} alt="Basketball" className="basketball" />
+          </div>
+        </div>
+
         <div className="collegeBuilding">
           <img src={building} alt="Building" className="building" />
           <div className="location">
@@ -173,6 +201,7 @@ class Home extends Component {
             <p className="phone">(977) 1-4362218, 4362504, 4354056</p>
           </div>
         </div>
+
         <div className="talkShow">
           <h1>
             Orient Talk<span> Show</span>{" "}
@@ -184,6 +213,7 @@ class Home extends Component {
               allow="autoplay;encrypted-media;"
               allowFullScreen
               title="video"
+              className="video"
             />
           </div>
         </div>
