@@ -1,16 +1,16 @@
-.plusTwo-academic-page {
+.BBS-academic-page {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
-.plusTwo-academic-page .plusTwoBox {
+.BBS-academic-page .BBSBox {
   display: flex;
   align-items: center;
   justify-content: start;
   margin: 10vh auto auto 5vw;
 }
-.plusTwo-academic-page .plusTwoBox .box1 {
+.BBS-academic-page .BBSBox .box1 {
   display: block;
   box-shadow: 0 0 8px 0 rgba(14, 13, 13, 0.2);
   width: 30vw;
@@ -18,18 +18,18 @@
   padding: 2rem;
   border-radius: 20px;
 }
-.plusTwo-academic-page .plusTwoBox .box1 .orientLogo {
+.BBS-academic-page .BBSBox .box1 .orientLogo {
   margin-top: 25px;
   margin-left: 30px;
   width: 100px;
 }
-.plusTwo-academic-page .plusTwoBox .box1 .header-text {
+.BBS-academic-page .BBSBox .box1 .header-text {
   font-size: 18px;
   color: #525252;
   margin-left: 30px;
   font-family: Apple Braille;
 }
-.plusTwo-academic-page .plusTwoBox .box1 ul {
+.BBS-academic-page .BBSBox .box1 ul {
   list-style: none;
   font-size: 13px;
   font-weight: 500;
@@ -38,22 +38,22 @@
   margin-top: -20px;
 }
 
-.plusTwo-academic-page .plusTwoBox .box1 ul li::before {
+.BBS-academic-page .BBSBox .box1 ul li::before {
   content: "\2022";
   margin-bottom: 50px;
   padding-right: 20px;
-  color: #ef8a00;
+  color: #1fc32c;
   font-weight: bold;
   margin-left: -1em;
   font-size: 30px;
   width: 100px;
 }
-.plusTwo-academic-page .plusTwoBox .box1 button {
+.BBS-academic-page .BBSBox .box1 button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px auto auto auto;
-  background-color: #ef8a00;
+  background-color: #1fc32c;
   border-style: none;
   border-radius: 20px;
   width: 25vw;
@@ -63,44 +63,44 @@
   font-weight: 600;
   cursor: pointer;
 }
-.plusTwo-academic-page .plusTwoTexts {
+.BBS-academic-page .BBSTexts {
   display: inline-block;
   align-items: center;
   justify-content: start;
   margin: 10vh 10vw;
 }
-.plusTwo-academic-page .plusTwoTexts .plusTwoProgramText {
+.BBS-academic-page .BBSTexts .BBSProgramText {
   display: block;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
-.plusTwoProgramText h3 {
+.BBSProgramText h3 {
   font-size: 25px;
   font-weight: 650;
 }
-.plusTwoProgramText p {
+.BBSProgramText p {
   font-size: 14px;
   color: #404040;
   line-height: 25px;
 }
-.plusTwo-academic-page .plusTwoTexts .plusTwoCourses {
+.BBS-academic-page .BBSTexts .BBSCourses {
   display: inline-block;
   align-items: center;
   justify-content: center;
-  margin:2vh auto;
+  margin: 2vh auto;
 }
-.plusTwoCourses h3 {
+.BBSCourses h3 {
   font-size: 25px;
   font-weight: 650;
 }
-.plusTwoCourses .faculty {
+.BBSCourses .faculty {
   display: flex;
   align-items: flex-start;
   justify-content: start;
   margin: auto;
 }
-.plusTwoCourses .faculty .science {
+.BBSCourses .faculty .science {
   display: block;
   align-items: center;
   justify-content: center;
@@ -113,16 +113,16 @@
   width: 10vw;
   height: 20vh;
 }
-.plusTwoCourses .faculty .science .fa-atom {
+.BBSCourses .faculty .science .fa-atom {
   font-size: 75px;
   color: #f86320;
 }
-.plusTwoCourses .faculty .science h4 {
+.BBSCourses .faculty .science h4 {
   font-size: 17px;
   font-weight: 400;
   margin: 20px;
 }
-.plusTwoCourses .faculty .management {
+.BBSCourses .faculty .management {
   display: block;
   align-items: center;
   justify-content: center;
@@ -135,15 +135,15 @@
   width: 10vw;
   height: 20vh;
 }
-.plusTwoCourses .faculty .management ion-icon {
+.BBSCourses .faculty .management ion-icon {
   color: #00efd3;
   font-size: 70px;
 }
-.plusTwoCourses .faculty .management h4 {
+.BBSCourses .faculty .management h4 {
   font-size: 17px;
   font-weight: 400;
 }
-.plusTwoCourses .faculty .humanities {
+.BBSCourses .faculty .humanities {
   display: block;
   align-items: center;
   justify-content: center;
@@ -156,15 +156,15 @@
   width: 10vw;
   height: 20vh;
 }
-.plusTwoCourses .faculty .humanities ion-icon {
+.BBSCourses .faculty .humanities ion-icon {
   color: #ff3434;
   font-size: 70px;
 }
-.plusTwoCourses .faculty .humanities h4 {
+.BBSCourses .faculty .humanities h4 {
   font-size: 17px;
   font-weight: 400;
 }
-.plusTwo-academic-page .requirements {
+.BBS-academic-page .requirements {
   display: block;
   justify-content: center;
   align-items: center;
@@ -174,7 +174,7 @@
   background-color: white;
   box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
   border-radius: 20px;
-  padding:0.1rem 0.6rem 0 0.6rem;
+  padding: 0.1rem 0.6rem 0 0.6rem;
 }
 .requirements h4 {
   margin-left: 30px;
@@ -187,63 +187,63 @@
   font-weight: 500;
   color: #404040;
 }
-.plusTwo-academic-page .scheme-awards {
+.BBS-academic-page .scheme-awards {
   display: flex;
   justify-content: start;
-  align-items: center;
   text-align: start;
-  margin:auto;
+  margin:4vh auto 2vh auto;
 }
-.scheme-awards .scholarship-scheme {
-  display: block;
-  justify-content: start;
+.BBS-academic-page .scholarship-scheme {
+  display: inline-block;
   align-items: center;
   text-align: start;
-  margin: 2vh 2vw 2vh 0;
+  margin:auto 1vw;
   background-color: white;
   box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
   border-radius: 20px;
-  width: 30vw;
+  padding: 0.4rem 0.5rem;
+  width: 28vw;
   height: 45vh;
 }
-.scholarship-scheme hr {
-  width: 25vw;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  margin: 1vh auto;
-}
-.scheme-awards .scholarship-scheme h4 {
+.BBS-academic-page .scholarship-scheme h4 {
   font-size: 17px;
   font-weight: 650;
   margin-left: 35px;
 }
-.scholarship-scheme .scholarship-table {
-  display: flex;
+
+.BBS-academic-page .scholarship-scheme table {
+  align-items: center;
+  width: 26vw;
+  border-collapse: collapse;
+  border-spacing: 10vmax;
+  justify-content: center;
+  margin: auto;
+}
+.BBS-academic-page .scholarship-scheme table thead td {
+  border-bottom: 2px solid #70707086;
+}
+.BBS-academic-page .scholarship-scheme td {
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
+  margin:auto;
+}
+.BBS-academic-page .scholarship-scheme .percentage {
   text-align: start;
-  justify-content: start;
-  align-items: center;
-}
-.scholarship-scheme .scholarship-table .percentage {
-  display: flex;
-  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 600;
   justify-content: start;
   margin: auto;
-  font-size: 15px;
 }
-.scholarship-scheme .scholarship-table .gpa {
-  display: flex;
-  align-items: flex-start;
-  justify-content: start;
+.BBS-academic-page .scholarship-scheme .marks {
+  text-align: center;
   margin: auto;
-  font-size: 11px;
+  font-size: 12px;
 }
-.scholarship-scheme .scholarship-table .seats {
-  display: flex;
-  align-items: center;
-  justify-content: start;
+.BBS-academic-page .scholarship-scheme .seats {
+  text-align: end;
   margin: auto;
-  font-size: 11px;
+  font-size: 12px;
 }
 .scheme-awards .excellence-award {
   display: block;
@@ -264,7 +264,7 @@
 .excellence-award img {
   display: flex;
   align-items: center;
-  width: 6vw;
+  width: 5vw;
   height: 10vh;
   justify-content: center;
   margin: 5vh auto;
@@ -287,7 +287,7 @@
   background-color: white;
   box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
   border-radius: 20px;
-  margin:2vh auto;
+  margin: 2vh auto;
   padding: 0.4rem 0.6rem;
   width: 45vw;
   height: 45vh;
@@ -312,11 +312,11 @@
 .financial-aid table {
   border-collapse: collapse;
 }
-table thead td{
+table thead td {
   border-spacing: 5px;
   border-bottom: 2px solid #70707086;
 }
-.financial-table td{
+.financial-table td {
   width: 200vw;
   height: 4vh;
   text-align: center;
@@ -329,73 +329,73 @@ table thead td{
   text-align: start;
   vertical-align: middle;
 }
-.financial-table .discount{
+.financial-table .discount {
   font-size: 11px;
   text-align: center;
   vertical-align: middle;
 }
-.financial-aid .seats{
+.financial-aid .seats {
   font-size: 11px;
   text-align: end;
   vertical-align: middle;
 }
-.financial-aspects{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
-  border-radius: 20px;
-  margin: 2vh auto 0 auto;
-  margin-bottom: -100px;
-  padding: 0.2rem 0.6rem;
-  width: 45vw;
-  height: 45vh;
-}
-.financial-aspects h4{
-  font-size: 17px;
-  font-weight: 650;
-  margin-left: 35px;
-}
-.financial-aspects p{
-  color: #707070;
-  font-size: 12px;
-  margin-left: 35px;
-}
-.financial-aspects .fee-table {
-  display: flex;
-  justify-content: start;
-  text-align: start;
-  margin: auto 3vw;
-}
-.financial-aspects table {
-  border-collapse: collapse;
-}
-table thead {
-  border-spacing: 10px;
-  border-bottom: 2px solid #70707086;
-}
-
-.financial-aspects th{
-  font-size: 14px;
-  font-weight: 650;
-  text-align: start;
-  vertical-align: middle;
-  margin:auto;
-}
-.financial-aspects .col-header{
-  font-size: 14px;
-  font-weight: 650;
-  text-align: center;
-  vertical-align: middle;
-  margin:auto;
-}
-.financial-aspects td{
-  width: 200vw;
-  height: 4vh;
-  font-size: 11px;
-  text-align: center;
-  vertical-align: middle;
-  margin:auto;
-
-}
+.BBS-academic-page .financial-aspects{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    margin: 2vh auto 0 auto;
+    margin-bottom: -100px;
+    padding: 0.2rem 0.6rem;
+    width: 45vw;
+    height: 45vh;
+  }
+  .BBS-academic-page .financial-aspects h4{
+    font-size: 17px;
+    font-weight: 650;
+    margin-left: 35px;
+  }
+  .BBS-academic-page .financial-aspects p{
+    color: #707070;
+    font-size: 12px;
+    margin-left: 35px;
+  }
+  .BBS-academic-page .financial-aspects .fee-table {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    margin: auto 3vw;
+  }
+  .BBS-academic-page .financial-aspects table {
+    border-collapse: collapse;
+  }
+  .BBS-academic-page.financial-aspects table thead {
+    border-spacing: 10px;
+    border-bottom: 2px solid #70707086;
+  }
+  
+  .BBS-academic-page .financial-aspects th{
+    font-size: 13px;
+    font-weight: 550;
+    text-align: start;
+    vertical-align: middle;
+    margin:auto;
+  }
+  .BBS-academic-page .financial-aspects .col-header{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: end;
+    vertical-align: middle;
+    margin:auto;
+  }
+  .BBS-academic-page .financial-aspects td{
+    width: 200vw;
+    height: 4vh;
+    font-size: 11px;
+    text-align: end;
+    vertical-align: middle;
+    margin:auto 0;
+  }
+  

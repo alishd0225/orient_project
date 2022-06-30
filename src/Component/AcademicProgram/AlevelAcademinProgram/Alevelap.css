@@ -1,0 +1,332 @@
+.Alevel-academic-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .Alevel-academic-page .AlevelBox {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 10vh auto auto 5vw;
+  }
+  .Alevel-academic-page .AlevelBox .box1 {
+    display: block;
+    box-shadow: 0 0 8px 0 rgba(14, 13, 13, 0.2);
+    width: 30vw;
+    height: 70vh;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  .Alevel-academic-page .AlevelBox .box1 .university {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 250px;
+  }
+  .Alevel-academic-page .AlevelBox .box1 .header-text {
+    font-size: 18px;
+    color: #525252;
+    margin-left: 30px;
+    font-family: Apple Braille;
+  }
+  .Alevel-academic-page .AlevelBox .box1 ul {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+  
+  .Alevel-academic-page .AlevelBox .box1 ul li::before {
+    content: "\2022";
+    margin-bottom: 50px;
+    padding-right: 20px;
+    color: #E43D4D;
+    font-weight: bold;
+    margin-left: -1em;
+    font-size: 30px;
+    width: 100px;
+  }
+  .Alevel-academic-page .AlevelBox .box1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto auto auto;
+    background-color: #E43D4D;
+    border-style: none;
+    border-radius: 20px;
+    width: 25vw;
+    height: 6vh;
+    color: rgb(250, 248, 248);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .Alevel-academic-page .AlevelTexts {
+    display: inline-block;
+    align-items: center;
+    justify-content: start;
+    margin: 10vh 10vw;
+  }
+  .Alevel-academic-page .AlevelTexts .AlevelProgramText {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .AlevelProgramText h3 {
+    font-size: 25px;
+    font-weight: 650;
+  }
+  .AlevelProgramText p {
+    font-size: 14px;
+    color: #404040;
+    line-height: 25px;
+  }
+  .Alevel-academic-page .AlevelTexts .AlevelCourses {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin:2vh auto;
+  }
+  .AlevelCourses h3 {
+    font-size: 25px;
+    font-weight: 650;
+  }
+  .AlevelCourses .faculty {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin: auto;
+  }
+  .faculty .science {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto 2vw auto 0;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    padding: 0.8rem 0;
+    border-radius: 10px;
+    width: 10vw;
+    height: 20vh;
+  }
+  .faculty .science .fa-atom {
+    font-size: 73px;
+    color: #f86320;
+  }
+  .faculty .science h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  .faculty .management-humanities {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto 2vw auto 0;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.8rem 0;
+    width: 10vw;
+    height: 20vh;
+  }
+  .faculty .management-humanities ion-icon {
+    color: #00efd3;
+    font-size: 70px;
+  }
+  .faculty .management-humanities .m{
+    font-size: 16px;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+  .faculty .management-humanities .h{
+    font-size: 16px;
+    justify-content: center;
+    font-weight: 400;
+    margin-top: -20px;
+  }
+  .faculty .optional {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 10px;
+    padding: 0.8rem 0;
+    margin: auto;
+    background-color: white;
+    width: 10vw;
+    height: 20vh;
+  }
+  .faculty .optional ion-icon {
+    color: #ff3434;
+    font-size: 70px;
+  }
+  .faculty .optional h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+  }
+  .Alevel-academic-page .scheme-awards {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin:auto;
+  }
+  .scheme-awards .scholarship-scheme {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    margin: 2vh 2vw 2vh 0;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    width: 30vw;
+    height: 45vh;
+  }
+  .scholarship-scheme hr {
+    width: 23vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh auto;
+  }
+  .scheme-awards .scholarship-scheme h4 {
+    font-size: 17px;
+    font-weight: 650;
+    margin-left: 35px;
+  }
+  .scholarship-scheme .scholarship-table {
+    display: flex;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+  }
+  .scholarship-scheme .scholarship-table .percentage {
+    display: block;
+    text-align: start;
+    align-items: center;
+    justify-content: start;
+    margin: auto ;
+    font-size: 15px;
+  }
+  .scholarship-scheme .scholarship-table .marks {
+    display: block;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: start;
+    margin: auto;
+    font-size: 11px;
+  }
+  .scheme-awards .excellence-award {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 15vw;
+    height: 45vh;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    background-color: white;
+  }
+  .excellence-award h4 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 650;
+  }
+  .excellence-award img {
+    display: flex;
+    align-items: center;
+    width: 5vw;
+    height: 10vh;
+    justify-content: center;
+    margin: 5vh auto;
+  }
+  .excellence-award p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    font-size: 11px;
+    padding: 0.2rem 0.8rem;
+  }
+  .financial-aspects{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    margin: 2vh auto 0 auto;
+    margin-bottom: -100px;
+    padding: 0.2rem 0.6rem;
+    width: 45vw;
+    height: 50vh;
+  }
+  .financial-aspects h4{
+    font-size: 17px;
+    font-weight: 650;
+    margin-left: 35px;
+  }
+  .financial-aspects p{
+    color: #707070;
+    font-size: 12px;
+    margin-left: 35px;
+  }
+  .financial-aspects .fee-table {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    margin: auto 2.8vw;
+  }
+
+  .financial-aspects .col-header{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: start;
+    vertical-align: middle;
+    margin:auto;
+  }
+  .financial-aspects td{
+    font-size: 11px;
+    text-align: start;
+    vertical-align: middle;
+    margin:auto;
+  }
+  .financial-aspects .particular-fee{
+    display: block;
+    justify-content: start;
+    text-align: start;
+    margin: 5vh auto;
+  }
+  .particular-fee .particular-fee-table{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    justify-content: start;
+    margin: auto 35px;
+  }
+
+  .particular-fee-table .col-header{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: start;
+    vertical-align: middle;
+    margin:auto;
+  }
+  .particular-fee-table tr{
+    margin: 10px -10px;
+  }
+  .particular-fee-table td{
+    font-size: 11px;
+    text-align: start;
+    vertical-align: middle;
+  }

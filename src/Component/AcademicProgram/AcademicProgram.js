@@ -18,7 +18,7 @@ const AcademicProgram = () => {
     navigate("/academicProgram/Alevelprogram");
   }
   const BBSAcademicProgramPage=()=>{
-    navigate("/academicProgram/BBSporogram");
+    navigate("/academicProgram/BBSprogram");
   } 
   const BABWSAcademicProgramPage=()=>{
     navigate("/academicProgram/BABWSprogram");

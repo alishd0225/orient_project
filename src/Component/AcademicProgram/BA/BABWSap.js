@@ -2,18 +2,16 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Header from "../../layout/Header/Header";
 import Footer from "../../layout/Footer/Footer";
-import "./PlusTwoap.css";
+import "./BABWSap.css";
 import orientLogo from "../../../images/orient.jpg";
 import trophy from "../../../images/trophy.png";
-import { useNavigate } from "react-router-dom";
 
-const PlusTwoap = () => {
-  const navigate=useNavigate();
+const BABWSap = () => {
   return (
     <>
       <Header />
-      <div className="plusTwo-academic-page">
-        <div className="plusTwoBox">
+      <div className="BABWS-academic-page">
+        <div className="BABWSBox">
           <Box component="div" className="box1">
             <img src={orientLogo} alt="Orient Logo" className="orientLogo" />
             <p className="header-text">
@@ -29,26 +27,24 @@ const PlusTwoap = () => {
               </li>
               <li>Events and sports help every year for students</li>
             </ul>
-
-            <button onClick={()=>{
-              navigate("/apply");
-            }}>Register now</button>
-
+            <button>Register now</button>
           </Box>
         </div>
-
-        <div className="plusTwoTexts">
-          <div className="plusTwoProgramText">
-            <h3>+2 Program</h3>
+        <div className="BABWSTexts">
+          <div className="BABWSProgramText">
+            <h3>BA/BWS Program</h3>
             <p>
-              Orient College is an advanced+2 institution affiliated to HSEB,
-              offering +2 programs in Science, Management and Humanities in
-              separate blocks for each stream. We have morning and day shifts
-              run with adequate physical and academic facilities.
+              All Bachelor programmes are run in the separate Bachelor Block in
+              the morning shift from 6.30 a.m. to 11.00a.m Popular subjects like
+              Sociology, Social Work and Major English are introduced in
+              Humanities. Our experienced faculties, modern teaching learning
+              methodology, fully equipped resourceful library and adequate focus
+              on extra curricular activities definitely prepares youths for the
+              shouldering of nation building process.
             </p>
           </div>
 
-          <div className="plusTwoCourses">
+          <div className="BABWSCourses">
             <h3>Courses</h3>
             <div className="faculty">
               <div className="science">
@@ -69,7 +65,7 @@ const PlusTwoap = () => {
           <div className="requirements">
             <h4>Requirements</h4>
             <p>
-              General requirement for +2 is SEE or equivalent. But Admission
+              General requirement for BBS is +2 or equivalent. But Admission
               Committee reserves the decision of eligibility in all streams
               based upon secondary level scores/grades and performance in the
               entrance examination. Students from boards and universities out of
@@ -81,36 +77,35 @@ const PlusTwoap = () => {
           <div className="scheme-awards">
             <div className="scholarship-scheme">
               <h4>Scholarship Scheme</h4>
-              <div className="scholarship-table">
-                <h5 className="percentage">100%</h5>
-                <p className="gpa">GPA 3.8 or above</p>
-                <p className="seats">10 seats</p>
+              <table>
+                <thead>
+                  <tr>
+                    <td className="percentage">100%</td>
+                    <td className="marks">80% and above</td>
+                    <td className="seats">10 seats</td>
+                  </tr>
+                </thead>
+                <thead>
+                  <tr>
+                    <td className="percentage">100%/50%</td>
+                    <td className="marks">75% to 79.99%</td>
+                    <td className="seats">15 seats</td>
+                  </tr>
+                </thead>
+                <thead>
+                  <tr>
+                    <td className="percentage">50%</td>
+                    <td className="marks">70% to 74.99%</td>
+                    <td className="seats">20 seats</td>
+                  </tr>
+                </thead>
+                <tr>
+                  <td className="percentage">50%</td>
+                  <td className="marks">60% to 69.99%</td>
+                  <td className="seats">25 seats</td>
+                </tr>
+              </table>
               </div>
-              <hr />
-              <div className="scholarship-table">
-                <h5 className="percentage">75%</h5>
-                <p className="gpa">GPA 3.60 to 3.75</p>
-                <p className="seats">15 seats</p>
-              </div>
-              <hr />
-              <div className="scholarship-table">
-                <h5 className="percentage">50%</h5>
-                <p className="gpa">GPA 3.4 to 3.55</p>
-                <p className="seats">20 seats</p>
-              </div>
-              <hr />
-              <div className="scholarship-table">
-                <h5 className="percentage">25%</h5>
-                <p className="gpa">GPA 3.20 to 3.35</p>
-                <p className="seats">25 seats</p>
-              </div>
-              <hr />
-              <div className="scholarship-table">
-                <h5 className="percentage">10%</h5>
-                <p className="gpa">GPA 3.00 to 3.15</p>
-                <p className="seats">30 seats</p>
-              </div>
-            </div>
             <div className="excellence-award">
               <h4>Orient Excellence Award</h4>
               <img src={trophy} alt="Trophy" />
@@ -166,52 +161,44 @@ const PlusTwoap = () => {
 
           <div className="financial-aspects">
             <h4>Financial Aspects</h4>
-            <p>Fee Structure for: New Admission XI</p>
+            <p>Fee Structure for BBS Level</p>
             <div className="fee-table">
               <table>
                 <thead>
                   <tr>
                     <td></td>
-                    <th scope="col" className="col-header">Admission Fee</th>
-                    <th scope="col" className="col-header">Annual Fee</th>
-                    <th scope="col" className="col-header">Monthly Fee</th>
-                    <th scope="col" className="col-header">Total</th>
+                    <th scope="col" className="col-header">
+                      Fees
+                    </th>
                   </tr>
                 </thead>
                 <thead>
                   <tr>
-                    <th scope="row">Science</th>
+                    <th scope="row">Admission Fee</th>
                     <td>10,000</td>
-                    <td>15,000</td>
-                    <td>7,500</td>
-                    <td>1,15,000</td>
                   </tr>
                 </thead>
                 <thead>
                   <tr>
-                    <th scope="row">Management</th>
-                    <td>10,000</td>
-                    <td>15,000</td>
+                    <th scope="row">Internal Exams</th>
                     <td>5,500</td>
-                    <td>91,000</td>
                   </tr>
                 </thead>
                 <thead>
                   <tr>
-                    <th scope="row">Humanities</th>
-                    <td>10,000</td>
-                    <td>15,000</td>
-                    <td>4,00</td>
-                    <td>73,000</td>
+                    <th scope="row">Security Deposit</th>
+                    <td>4,000</td>
                   </tr>
                 </thead>
-
+                <thead>
+                  <tr>
+                    <th scope="row">Form Charge</th>
+                    <td>4,000</td>
+                  </tr>
+                </thead>
                 <tr>
-                  <th scope="row">Law</th>
-                  <td>10,000</td>
-                  <td>15,000</td>
+                  <th scope="row">Monthly Fee</th>
                   <td>5,000</td>
-                  <td>85,000</td>
                 </tr>
               </table>
             </div>
@@ -223,4 +210,4 @@ const PlusTwoap = () => {
   );
 };
 
-export default PlusTwoap;
+export default BABWSap;

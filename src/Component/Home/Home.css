@@ -437,11 +437,11 @@
   }
   .academicProgram .container .plusTwoProgram .box1 {
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
   }
   .academicProgram .container .plusTwoProgram .box1 .box2 {
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
   }
   .academicProgram .container .plusTwoProgram .plusTwo {
     margin-left: 30px;
@@ -452,7 +452,7 @@
   .academicProgram .container .plusTwoProgram .orientLogo {
     margin-top: 25px;
     margin-left: 30px;
-    width: 70px;
+    width: 60px;
   }
   .academicProgram .container .plusTwoProgram .header-text {
     font-size: 16px;
@@ -461,7 +461,7 @@
   }
   .academicProgram .container .plusTwoProgram ul {
     list-style: none;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: black;
     margin-left: 20px;
@@ -479,9 +479,9 @@
   }
   .academicProgram .container .plusTwoProgram button {
     width: 25vw;
-    height: 6vh;
+    height: 5vh;
     margin: auto 0 auto 55vw;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
   }
   .academicProgram .container .A_level {
@@ -494,11 +494,11 @@
   }
   .academicProgram .container .A_level .box3 {
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
   }
   .academicProgram .container .A_level .box3 .box4 {
     width: 90vw;
-    height: 60vh;
+    height: 70vh;
   }
   .academicProgram .container .A_level h4 {
     margin-left: 30px;
@@ -518,7 +518,7 @@
   }
   .academicProgram .container .A_level ul {
     list-style: none;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: black;
     margin-left: 20px;
@@ -536,9 +536,9 @@
   }
   .academicProgram .container .A_level button {
     width: 25vw;
-    height: 6vh;
+    height: 5vh;
     margin: auto 0 auto 55vw;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
   }
   .memoriesOfExcellence {

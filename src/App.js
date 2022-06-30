@@ -21,6 +21,9 @@ import AuthContextProvider from "./Component/context/AuthContext";
 import ProtectedRoute from "./Component/Route/ProtectedRoute";
 import AcademicProgram from "./Component/AcademicProgram/AcademicProgram";
 import PlusTwoap from "./Component/AcademicProgram/+2academicProgram/PlusTwoap";
+import Alevelap from "./Component/AcademicProgram/AlevelAcademinProgram/Alevelap";
+import BBSap from "./Component/AcademicProgram/BBSacademicProgram/BBSap";
+import BABWSap from "./Component/AcademicProgram/BA/BABWSap";
 
 export default function App() {
   return (
@@ -41,7 +44,9 @@ export default function App() {
             <Route path="/result/Alevelresult/" element={<AlevelResult />} />
             <Route path="/academicProgram/" element={<AcademicProgram/>}/>
             <Route path="/academicProgram/+2program" element={<PlusTwoap/>}/>
-           
+            <Route path="academicProgram/alevelprogram" element={<Alevelap/>}/>
+            <Route path="academicProgram/BBSprogram" element={<BBSap/>}/>
+            <Route path="academicProgram/BABWSprogram" element={<BABWSap/>}/>
           </Routes>
           <ProtectedRoute path="/signin" element={<SignIn />} />
           <ProtectedRoute path="/signup" element={<SignUp />} />
