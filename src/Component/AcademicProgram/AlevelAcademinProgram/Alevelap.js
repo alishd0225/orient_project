@@ -5,8 +5,10 @@ import Footer from "../../layout/Footer/Footer";
 import "./Alevelap.css";
 import university from "../../../images/university.png";
 import trophy from "../../../images/trophy.png";
+import { useNavigate } from "react-router-dom";
 
 const Alevelap = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -27,7 +29,13 @@ const Alevelap = () => {
               </li>
               <li>Become qualified and accepted as university student</li>
             </ul>
-            <button>Register now</button>
+            <button
+              onClick={() => {
+                navigate("/apply");
+              }}
+            >
+              Register now
+            </button>
           </Box>
         </div>
 

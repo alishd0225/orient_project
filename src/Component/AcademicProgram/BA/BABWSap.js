@@ -5,8 +5,10 @@ import Footer from "../../layout/Footer/Footer";
 import "./BABWSap.css";
 import orientLogo from "../../../images/orient.jpg";
 import trophy from "../../../images/trophy.png";
+import { useNavigate } from "react-router-dom";
 
 const BABWSap = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -27,7 +29,13 @@ const BABWSap = () => {
               </li>
               <li>Events and sports help every year for students</li>
             </ul>
-            <button>Register now</button>
+            <button
+              onClick={() => {
+                navigate("/apply");
+              }}
+            >
+              Register now
+            </button>
           </Box>
         </div>
         <div className="BABWSTexts">
@@ -105,7 +113,7 @@ const BABWSap = () => {
                   <td className="seats">25 seats</td>
                 </tr>
               </table>
-              </div>
+            </div>
             <div className="excellence-award">
               <h4>Orient Excellence Award</h4>
               <img src={trophy} alt="Trophy" />

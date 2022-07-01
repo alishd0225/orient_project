@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { faRupiahSign } from "@fortawesome/free-solid-svg-icons";
 import profile from "./profile1.png";
 import { useAuth } from "../../context/AuthContext";
+import bird from "./bird.jpg";
 
 export default function () {
   const navigation = useNavigate(); // extract navigation prop here
@@ -83,7 +84,7 @@ class Header extends Component {
             >
               <div className="profile" >
                 <img
-                  src={profile}
+                  src={bird}
                   alt="Profile Picture"
                   className="profile-image"
                 />

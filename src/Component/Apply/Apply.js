@@ -12,7 +12,7 @@ export default function Apply() {
   //authentication Ids
   const SERVICE_ID = "service_j9s7qzn";
   const TEMPLATE_ID = "template_uzyb7zb";
-  const USER_ID="gYO98vR-1fdAJdh_J";
+  const USER_ID = "gYO98vR-1fdAJdh_J";
 
   // States for registration
   const [name, setName] = useState("");
@@ -23,6 +23,7 @@ export default function Apply() {
   const [gname, setGname] = useState("");
   const [gcontact, setGcontact] = useState("");
   const [seePercentage, setSeePercentage] = useState("");
+  const [selection, setSelection] = useState("");
 
   //Initaialization for navigation to next page
   const navigate = useNavigate();
@@ -65,6 +66,9 @@ export default function Apply() {
   const handleSeePercentage = (e) => {
     setSeePercentage(e.target.value);
   };
+  const handleSelection = (e) => {
+    setSelection(e.target.value);
+  };
   // Handling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -81,12 +85,14 @@ export default function Apply() {
       setError(true);
     } else {
       //sending mail to email using emailjs
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target,USER_ID).then((result) => {
-        console.log(result.text);
-      },
-      (error)=>{
-        console.log(error.text);
-      });
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
       e.target.reset();
       navigate("/apply/applied");
       setError(false);
@@ -126,6 +132,14 @@ export default function Apply() {
         <div className="messages">{errorMessage()}</div>
 
         <form onSubmit={handleSubmit}>
+          <div className="programSelection">
+            <select name="program" value={selection} onChange={handleSelection}>
+              <option>+2 Program</option>
+              <option>A-Level Program</option>
+              <option>BBS Program</option>
+              <option>BA/BWS Program</option>
+            </select>
+          </div>
           {/* Labels and inputs for form data */}
           <div className="leftSide">
             <label className="label">Full Name</label>

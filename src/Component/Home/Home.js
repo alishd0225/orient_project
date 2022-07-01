@@ -14,7 +14,17 @@ import map from "../../images/map.png";
 import Dialog from "./Dialog";
 import Header from "../layout/Header/Header";
 import Box from "@mui/material/Box";
+import { useNavigate } from "react-router-dom";
 import Footer from "../layout/Footer/Footer";
+
+
+export default function(){
+  const navigation = useNavigate(); // extract navigation prop here
+
+  return (
+    <Home navigation={navigation} />
+  ); //
+}
 
 class Home extends Component {
   //Pop Up function initialization
@@ -51,7 +61,9 @@ class Home extends Component {
                 of the students{" "}
               </p>
             </blockquote>
-            <button className="about-us">About us</button>
+            <button className="about-us" onClick={()=>{
+              this.props.navigation("/aboutus");
+            }}>About us</button>
             <div className="popUp">
               <img
                 src={notice}
@@ -223,4 +235,3 @@ class Home extends Component {
   }
 }
 
-export default Home;

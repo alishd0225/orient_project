@@ -5,8 +5,10 @@ import Footer from "../../layout/Footer/Footer";
 import "./BBSap.css";
 import orientLogo from "../../../images/orient.jpg";
 import trophy from "../../../images/trophy.png";
+import { useNavigate } from "react-router-dom";
 
 const BBSap = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -27,12 +29,18 @@ const BBSap = () => {
               </li>
               <li>Events and sports help every year for students</li>
             </ul>
-            <button>Register now</button>
+            <button
+              onClick={() => {
+                navigate("/apply");
+              }}
+            >
+              Register now
+            </button>
           </Box>
         </div>
         <div className="BBSTexts">
           <div className="BBSProgramText">
-            <h3>+2 Program</h3>
+            <h3>BBS Program</h3>
             <p>
               The college is adding BBA programme’s form forthcoming session.
               All Bachelor programme’s are run in the separate Bachelor Block in
@@ -169,8 +177,8 @@ const BBSap = () => {
                       Fees
                     </th>
                   </tr>
-                  </thead>
-                    <thead>
+                </thead>
+                <thead>
                   <tr>
                     <th scope="row">Admission Fee</th>
                     <td>10,000</td>

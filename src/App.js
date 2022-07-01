@@ -24,6 +24,7 @@ import PlusTwoap from "./Component/AcademicProgram/+2academicProgram/PlusTwoap";
 import Alevelap from "./Component/AcademicProgram/AlevelAcademinProgram/Alevelap";
 import BBSap from "./Component/AcademicProgram/BBSacademicProgram/BBSap";
 import BABWSap from "./Component/AcademicProgram/BA/BABWSap";
+import About from "./Component/AboutPage/About";
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
             <Route path="academicProgram/alevelprogram" element={<Alevelap/>}/>
             <Route path="academicProgram/BBSprogram" element={<BBSap/>}/>
             <Route path="academicProgram/BABWSprogram" element={<BABWSap/>}/>
+            <Route path="/aboutus" element={<About/>}/>
           </Routes>
           <ProtectedRoute path="/signin" element={<SignIn />} />
           <ProtectedRoute path="/signup" element={<SignUp />} />
