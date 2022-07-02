@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { faRupiahSign } from "@fortawesome/free-solid-svg-icons";
 import profile from "./profile1.png";
 import { useAuth } from "../../context/AuthContext";
-import bird from "./bird.jpg";
+import plant from "./plant.jpg";
 
 export default function () {
   const navigation = useNavigate(); // extract navigation prop here
@@ -70,11 +70,11 @@ class Header extends Component {
           </li>
           <li>
             <Link
-              to="/AboutOrient/"
+              to="/aboutus/"
               className="nav-links"
               onClick={this.closeMobileMenu}
             >
-              About Orient
+              About
             </Link>
           </li>
           <li>
@@ -84,7 +84,7 @@ class Header extends Component {
             >
               <div className="profile" >
                 <img
-                  src={bird}
+                  src={plant}
                   alt="Profile Picture"
                   className="profile-image"
                 />

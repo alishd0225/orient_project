@@ -46,7 +46,7 @@
     background-color: #efb4fd;
     color: white;
   }
-  @media screen and (max-width: 900px) and (min-width:300px) {
+  @media screen and (max-width: 700px) and (min-width:300px) {
     .result-choice-headline {
       display: flex;
       align-items: center;

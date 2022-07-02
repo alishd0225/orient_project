@@ -38,11 +38,11 @@
   vertical-align: middle;
 }
 .profile .profile-image {
-  width: 50px;
+  width: 40px;
   border-radius: 50%;
 }
 .profile-image:hover {
-  width: 54px;
+  width: 44px;
   transition: all 0.2s ease-in;
 }
 .fa-bars {
