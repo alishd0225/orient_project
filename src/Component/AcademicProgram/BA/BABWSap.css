@@ -398,3 +398,411 @@ table thead td {
   vertical-align: middle;
   margin: auto 0;
 }
+@media screen and (max-width:700px) and (min-width:300px){
+  .BABWS-academic-page {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .BABWS-academic-page .BABWSBox {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto;
+  }
+  .BABWS-academic-page .BABWSBox .box1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 8px 0 rgba(14, 13, 13, 0.2);
+    width: 70vw;
+    height: auto;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  .BABWS-academic-page .BABWSBox .box1 .orientLogo {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 100px;
+  }
+  .BABWS-academic-page .BABWSBox .box1 .header-text {
+    font-size: 18px;
+    color: #525252;
+    margin-left: 30px;
+    font-family: Apple Braille;
+  }
+  .BABWS-academic-page .BABWSBox .box1 ul {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+  
+  .BABWS-academic-page .BABWSBox .box1 ul li::before {
+    content: "\2022";
+    margin-bottom: 50px;
+    padding-right: 20px;
+    color: #3e92e6;
+    font-weight: bold;
+    margin-left: -1em;
+    font-size: 30px;
+    width: 100px;
+  }
+  .BABWS-academic-page .BABWSBox .box1 button {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto auto auto;
+    background-color: #3e92e6;
+    border-style: none;
+    border-radius: 20px;
+    width: 70vw;
+    height: 5vh;
+    color: rgb(250, 248, 248);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .BABWS-academic-page .BABWSTexts {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto;
+  }
+  .BABWS-academic-page .BABWSTexts .BABWSProgramText {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto 4vw;
+  }
+  .BABWSProgramText h3 {
+    font-size: 35px;
+    font-weight: 650;
+  }
+  .BABWSProgramText p {
+    font-size: 15px;
+    color: black;
+    line-height: 25px;
+  }
+  .BABWS-academic-page .BABWSTexts .BABWSCourses {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 4vw;
+  }
+  .BABWSCourses h3 {
+    font-size: 35px;
+    font-weight: 650;
+  }
+  .BABWSCourses .faculty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .BABWSCourses .faculty .science {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto ;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    padding: 0.8rem 0;
+    border-radius: 10px;
+    width: 25vw;
+    height: auto;
+  }
+  .BABWSCourses .faculty .science .fa-atom {
+    font-size: 75px;
+    color: #f86320;
+  }
+  .BABWSCourses .faculty .science h4 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px;
+  }
+  .BABWSCourses .faculty .management {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.8rem 0;
+    width: 25vw;
+    height: auto;
+  }
+  .BABWSCourses .faculty .management ion-icon {
+    color: #00efd3;
+    font-size: 70px;
+  }
+  .BABWSCourses .faculty .management h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .BABWSCourses .faculty .humanities {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 10px;
+    padding: 0.8rem 0;
+    margin: auto;
+    background-color: white;
+    width: 25vw;
+    height: auto;
+  }
+  .BABWSCourses .faculty .humanities ion-icon {
+    color: #ff3434;
+    font-size: 70px;
+  }
+  .BABWSCourses .faculty .humanities h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .BABWS-academic-page .requirements {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh auto;
+    width: 70vw;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    padding: 0.1rem 0.6rem 0.5rem 0.6rem;
+  }
+  .requirements h4 {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 650;
+  }
+  .requirements p {
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+  }
+  .BABWS-academic-page .scheme-awards {
+    display: block;
+    justify-content: start;
+    text-align: start;
+    margin:4vh auto;
+  }
+  .BABWS-academic-page .scholarship-scheme {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin:auto ;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    padding: 0.4rem 0.5rem;
+    width: 70vw;
+    height: auto;
+  }
+  .BABWS-academic-page .scholarship-scheme h4 {
+    font-size: 20px;
+    font-weight: 650;
+    margin-left: 30px;
+  }
+  
+  .BABWS-academic-page .scholarship-scheme table {
+    align-items: center;
+    width: 60vw;
+    border-collapse: collapse;
+    justify-content: center;
+    margin: auto;
+  }
+  .BABWS-academic-page .scholarship-scheme table thead td {
+    border-bottom: 2px solid #70707086;
+  }
+  .BABWS-academic-page .scholarship-scheme td {
+    padding: 10px 0;
+    text-align: center;
+    vertical-align: middle;
+    margin:auto;
+  }
+  .BABWS-academic-page .scholarship-scheme .percentage {
+    text-align: start;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: start;
+    margin: auto;
+  }
+  .BABWS-academic-page .scholarship-scheme .marks {
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+  }
+  .BABWS-academic-page .scholarship-scheme .seats {
+    text-align: end;
+    margin: auto;
+    font-size: 12px;
+  }
+  .scheme-awards .excellence-award {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin:5vh auto;
+    padding: 0.1rem 0.5rem 0.4rem 0.5rem;
+    background-color: white;
+    border-radius: 20px;
+    width: 70vw;
+    height: auto;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    background-color: white;
+  }
+  .excellence-award h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 650;
+  }
+  .excellence-award img {
+    display: flex;
+    align-items: center;
+    width: 12vw;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+  }
+  .excellence-award p {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin:3vh aut0;
+    font-size: 12px;
+    padding: 0;
+  }
+  .financial {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .financial .financial-aid {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    margin:auto;
+    padding: 0.4rem 0.6rem;
+    width: 70vw;
+    height: auto;
+  }
+  .financial-aid h4 {
+    font-size: 20px;
+    font-weight: 650;
+    margin-left: 30px;
+  }
+  .financial-aid p {
+    color: #707070;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  .financial-aid .financial-table {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto 4vw;
+  }
+  .financial-aid table {
+    border-collapse: collapse;
+  }
+  table thead td {
+    border-spacing: 5px;
+    border-bottom: 2px solid #70707086;
+  }
+  .financial-table td {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+  }
+  .financial-table .title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+    vertical-align: middle;
+  }
+  .financial-table .discount {
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .financial-aid .seats {
+    font-size: 11px;
+    text-align: end;
+    vertical-align: middle;
+  }
+  .BABWS-academic-page .financial-aspects {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(14, 13, 13, 0.2);
+    border-radius: 20px;
+    margin: 4vh auto ;
+    padding: 0.2rem 0.6rem;
+    width: 70vw;
+    height: auto;
+  }
+  .BABWS-academic-page .financial-aspects h4 {
+    font-size: 17px;
+    font-weight: 650;
+    margin-left: 30px;
+  }
+  .BABWS-academic-page .financial-aspects p {
+    color: #707070;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  .BABWS-academic-page .financial-aspects .fee-table {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    margin: auto 3vw;
+  }
+  .BABWS-academic-page .financial-aspects table {
+    border-collapse: collapse;
+  }
+  .BABWS-academic-page.financial-aspects table thead {
+    border-spacing: 10px;
+    border-bottom: 2px solid #70707086;
+  }
+  
+  .BABWS-academic-page .financial-aspects th {
+    font-size: 13px;
+    font-weight: 550;
+    text-align: start;
+    vertical-align: middle;
+    margin: auto;
+  }
+  .BABWS-academic-page .financial-aspects .col-header {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: end;
+    vertical-align: middle;
+    margin: auto;
+  }
+  .BABWS-academic-page .financial-aspects td {
+    width: 200vw;
+    height: 4vh;
+    font-size: 11px;
+    text-align: end;
+    vertical-align: middle;
+    margin: auto 0;
+  }
+
+}

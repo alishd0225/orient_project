@@ -135,7 +135,7 @@ export default function Apply() {
           <div className="programSelection">
             <select name="program" value={selection} onChange={handleSelection}>
               <option>+2 Program</option>
-              <option>A-Level Program</option>
+              <option selected>A-Level Program</option>
               <option>BBS Program</option>
               <option>BA/BWS Program</option>
             </select>

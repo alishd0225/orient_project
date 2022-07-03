@@ -143,7 +143,6 @@ const Alevelap = () => {
                 </tr>
               </table>
             </div>
-            <div className="particular-fee">
               <p>Particular Fee (Per Year)</p>
               <div className="particular-fee-table">
                 <table>
@@ -172,7 +171,6 @@ const Alevelap = () => {
                     <td>20,000</td>
                   </tr>
                 </table>
-              </div>
             </div>
           </div>
         </div>

@@ -20,6 +20,7 @@ import SignUp from "./Component/layout/User/SignUp";
 import AuthContextProvider from "./Component/context/AuthContext";
 import ProtectedRoute from "./Component/Route/ProtectedRoute";
 import AcademicProgram from "./Component/AcademicProgram/AcademicProgram";
+import Profile from "./Component/layout/User/Profile";
 import PlusTwoap from "./Component/AcademicProgram/+2academicProgram/PlusTwoap";
 import Alevelap from "./Component/AcademicProgram/AlevelAcademinProgram/Alevelap";
 import BBSap from "./Component/AcademicProgram/BBSacademicProgram/BBSap";
@@ -49,6 +50,7 @@ export default function App() {
             <Route path="academicProgram/BBSprogram" element={<BBSap/>}/>
             <Route path="academicProgram/BABWSprogram" element={<BABWSap/>}/>
             <Route path="/aboutus" element={<About/>}/>
+            <Route path="/profile" element={<Profile/>}/>
           </Routes>
           <ProtectedRoute path="/signin" element={<SignIn />} />
           <ProtectedRoute path="/signup" element={<SignUp />} />

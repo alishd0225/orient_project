@@ -171,10 +171,10 @@ const PlusTwoap = () => {
               <table>
                 <thead>
                   <tr>
-                    <td></td>
-                    <th scope="col" className="col-header">Admission Fee</th>
-                    <th scope="col" className="col-header">Annual Fee</th>
-                    <th scope="col" className="col-header">Monthly Fee</th>
+                    <th scope="row">Fee</th>
+                    <th scope="col" className="col-header">Admission</th>
+                    <th scope="col" className="col-header">Annual</th>
+                    <th scope="col" className="col-header">Monthly</th>
                     <th scope="col" className="col-header">Total</th>
                   </tr>
                 </thead>
