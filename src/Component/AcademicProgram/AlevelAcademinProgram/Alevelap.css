@@ -438,7 +438,7 @@
     color: #f86320;
   }
   .faculty .science h4 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     margin: 10px;
   }
@@ -460,13 +460,13 @@
     font-size: 70px;
   }
   .faculty .management-humanities .m {
-    font-size: 15px;
+    font-size: 14px;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0;
     font-weight: 400;
   }
   .faculty .management-humanities .h {
-    font-size: 15px;
+    font-size: 14px;
     justify-content: center;
     font-weight: 400;
     margin-top: -20px;
@@ -489,7 +489,7 @@
     font-size: 70px;
   }
   .faculty .optional h4 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     margin: 10px;
   }
@@ -627,13 +627,18 @@
   }
   .Alevel-academic-page .financial-aspects .particular-fee-table {
     margin: auto;
+    justify-content: center;
+    text-align: center;
   }
   .Alevel-academic-page .particular-fee-table tr {
-    margin: 0 ;
+    margin:auto;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
   }
   .Alevel-academic-page .particular-fee-table td {
     font-size: 10px;
-    text-align: start;
+    text-align: center;
     vertical-align: middle;
   }
   

@@ -12,6 +12,7 @@
   display: none;
 }
 .nav-menu {
+  position: absolute;
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(8, auto);
@@ -51,17 +52,20 @@
 .menu-icon {
   display: none;
 }
-.fa-sign-out {
-  display: block;
-  margin-bottom: 10px;
-  color: white;
-  font-size: 20px;
+.nav-links .logIn {
+  display:block;
+  margin-top: -2vh;
 }
-.fa-sign-out:hover {
+.logIn .loggedIn-image {
+  width: 40px;
   cursor: pointer;
-  font-size: 22px;
-  transition: all 0.2s ease-out;
+  border-radius: 50%;
 }
+.loggedIn-image:hover {
+  width: 44px;
+  transition: all 0.2s ease-in;
+}
+
 @media screen and (max-width: 1100px) and (min-width: 600px) {
   .NavbarItem {
     display: flex;
@@ -141,23 +145,5 @@
   .fa-times {
     color: rgb(0, 0, 0);
     font-size: 2rem;
-  }
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    padding: 0.5rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    width: 30%;
-    background: #4ad9e4;
-    text-decoration: none;
-    color: rgb(3, 3, 3);
-    font-size: 1.1rem;
-    font-weight: 450;
-  }
-  .fa-sign-out {
-    color: #022a51;
-    font-size: 30px;
   }
 }

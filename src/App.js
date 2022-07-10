@@ -1,10 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import Home from "./Component/Home/Home";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Apply from "./Component/Apply/Apply";
 import Applied from "./Component/Apply/Applied";
 import Gallery from "./Component/Gallery/Gallery";
@@ -25,11 +21,23 @@ import Alevelap from "./Component/AcademicProgram/AlevelAcademinProgram/Alevelap
 import BBSap from "./Component/AcademicProgram/BBSacademicProgram/BBSap";
 import BABWSap from "./Component/AcademicProgram/BA/BABWSap";
 import About from "./Component/AboutPage/About";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./Component/firebase/fire";
+import Profile from "./Component/layout/User/Profile";
+import PrivateRoute from "./Component/Route/PrivateRoute";
 
 export default function App() {
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      setCurrentUser(user);
+    });
+  }, []);
+
   return (
     <div className="App">
-      <AuthContextProvider>
+      <AuthContextProvider value={{ currentUser }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -43,13 +51,17 @@ export default function App() {
             <Route path="/result/" element={<Result />} />
             <Route path="/result/+2result/" element={<PlusTwoReslt />} />
             <Route path="/result/Alevelresult/" element={<AlevelResult />} />
-            <Route path="/academicProgram/" element={<AcademicProgram/>}/>
-            <Route path="/academicProgram/+2program" element={<PlusTwoap/>}/>
-            <Route path="academicProgram/alevelprogram" element={<Alevelap/>}/>
-            <Route path="academicProgram/BBSprogram" element={<BBSap/>}/>
-            <Route path="academicProgram/BABWSprogram" element={<BABWSap/>}/>
-            <Route path="/aboutus" element={<About/>}/>
+            <Route path="/academicProgram/" element={<AcademicProgram />} />
+            <Route path="/academicProgram/+2program" element={<PlusTwoap />} />
+            <Route
+              path="academicProgram/alevelprogram"
+              element={<Alevelap />}
+            />
+            <Route path="academicProgram/BBSprogram" element={<BBSap />} />
+            <Route path="academicProgram/BABWSprogram" element={<BABWSap />} />
+            <Route path="/aboutus" element={<About />} />
           </Routes>
+          <PrivateRoute exact path="/profile" element={<Profile/>} />
           <ProtectedRoute path="/signin" element={<SignIn />} />
           <ProtectedRoute path="/signup" element={<SignUp />} />
         </BrowserRouter>
@@ -57,4 +69,3 @@ export default function App() {
     </div>
   );
 }
-

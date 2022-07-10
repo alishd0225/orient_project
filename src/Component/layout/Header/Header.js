@@ -3,9 +3,9 @@ import "./Header.css";
 import orient from "./orient.png";
 import { Link, useNavigate } from "react-router-dom";
 import { faRupiahSign } from "@fortawesome/free-solid-svg-icons";
-import profile from "./profile1.png";
 import { useAuth } from "../../context/AuthContext";
 import plant from "./plant.jpg";
+import loggedinImage from "./loggedIn-image.jpg";
 
 export default function () {
   const navigation = useNavigate(); // extract navigation prop here
@@ -78,32 +78,32 @@ class Header extends Component {
             </Link>
           </li>
           <li>
-          {!this.props.currentUser &&  <Link
-              to="/signup"
-              className="nav-links"
-            >
-              <div className="profile" >
-                <img
-                  src={plant}
-                  alt="Profile Picture"
-                  className="profile-image"
-                />
-              </div>
-            </Link>}
+            {!this.props.currentUser && (
+              <Link to="/signup" className="nav-links">
+                <div className="profile">
+                  <img
+                    src={plant}
+                    alt="Profile Picture"
+                    className="profile-image"
+                  />
+                </div>
+              </Link>
+            )}
           </li>
           {this.props.currentUser && (
             <li className="nav-item">
               <div className="nav-links">
-                <i
-                  class="fa fa-sign-out"
-                  aria-hidden="true"
-                  onClick={async (e) => {
-                    e.preventDefault();
-                    this.props.logout();
-                    this.props.navigation("/");
-                    console.log("Your are logged out now");
-                  }}
-                ></i>
+                <div className="logIn">
+                  <img
+                    src={loggedinImage}
+                    alt="Profile Picture"
+                    className="loggedIn-image"
+                    onClick={async (e) => {
+                      e.preventDefault();
+                      this.props.navigation("/profile");
+                    }}
+                  />
+                </div>
               </div>
             </li>
           )}

@@ -119,10 +119,10 @@ const Alevelap = () => {
               <table>
                 <tr>
                   <th scope="col" className="col-header">
-                    Admission Fee
+                    Admission 
                   </th>
                   <th scope="col" className="col-header">
-                    Annual Fee
+                    Annual 
                   </th>
                   <th scope="col" className="col-header">
                     Books
@@ -131,7 +131,7 @@ const Alevelap = () => {
                     Materials
                   </th>
                   <th scope="col" className="col-header">
-                    Monthly Fee
+                    Monthly 
                   </th>
                 </tr>
                 <tr>

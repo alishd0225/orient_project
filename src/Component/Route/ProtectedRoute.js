@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth, useAuthValue } from "../context/AuthContext";
 
 function ProtectedRoute({ component: Component, ...rest }) {
-  const { currentUser } = useAuth();
+  const { currentUser } = useAuthValue();
 
   return (
     <Routes>
