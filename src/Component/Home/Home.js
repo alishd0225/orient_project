@@ -136,7 +136,9 @@ class Home extends Component {
                       </li>
                       <li>Events and sports help every year for students</li>
                     </ul>
-                    <button>Register now</button>
+                    <button onClick={(e)=>{
+                      this.props.navigation("/academicProgram/+2program")
+                    }}>Register now</button>
                   </Box>
                 </Box>
               </div>
@@ -179,7 +181,9 @@ class Home extends Component {
                         Become qualified and accepted as a university student
                       </li>
                     </ul>
-                    <button>Register now</button>
+                    <button onClick={(e)=>{
+                      this.props.navigation("academicProgram/alevelprogram");
+                    }}>Register now</button>
                   </Box>
                 </Box>
               </div>

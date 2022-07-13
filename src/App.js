@@ -44,7 +44,7 @@ export default function App() {
             <Route path="/apply/" element={<Apply />} />
             <Route path="/apply/applied/" element={<Applied />} />
             <Route path="/gallery/" element={<Gallery />} />
-            <Route path="/news/" element={<NewsEvent />} />
+            <Route path="/news" element={<NewsEvent />} />
             <Route path="/learning/" element={<Learning />} />
             <Route path="/learning/library/" element={<Library />} />
             <Route path="/learning/pastpaper/" element={<PastPaper />} />
