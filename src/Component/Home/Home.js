@@ -17,13 +17,10 @@ import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import Footer from "../layout/Footer/Footer";
 
-
-export default function(){
+export default function () {
   const navigation = useNavigate(); // extract navigation prop here
 
-  return (
-    <Home navigation={navigation} />
-  ); //
+  return <Home navigation={navigation} />; //
 }
 
 class Home extends Component {
@@ -61,9 +58,14 @@ class Home extends Component {
                 of the students{" "}
               </p>
             </blockquote>
-            <button className="about-us" onClick={()=>{
-              this.props.navigation("/aboutus");
-            }}>About us</button>
+            <button
+              className="about-us"
+              onClick={() => {
+                this.props.navigation("/aboutus");
+              }}
+            >
+              About us
+            </button>
             <div className="popUp">
               <img
                 src={notice}
@@ -90,7 +92,7 @@ class Home extends Component {
         <div className="program">
           <div className="academicProgram">
             <h1 className="text-align">Our Academic Programs</h1>
-            <div className="container">
+            <div className="container-one">
               <div className="plusTwoProgram">
                 <Box
                   component="div"
@@ -100,7 +102,7 @@ class Home extends Component {
                     height: 550,
                     boxShadow: 10,
                     borderRadius: 8,
-                    backgroundColor: "#1FC32C",
+                    backgroundColor: "#EF8A00",
                   }}
                 >
                   <h4 className="plusTwo">+2 Program</h4>
@@ -136,9 +138,13 @@ class Home extends Component {
                       </li>
                       <li>Events and sports help every year for students</li>
                     </ul>
-                    <button onClick={(e)=>{
-                      this.props.navigation("/academicProgram/+2program")
-                    }}>Register now</button>
+                    <button
+                      onClick={(e) => {
+                        this.props.navigation("/academicProgram/+2program");
+                      }}
+                    >
+                      Learn More
+                    </button>
                   </Box>
                 </Box>
               </div>
@@ -181,9 +187,126 @@ class Home extends Component {
                         Become qualified and accepted as a university student
                       </li>
                     </ul>
-                    <button onClick={(e)=>{
-                      this.props.navigation("academicProgram/alevelprogram");
-                    }}>Register now</button>
+                    <button
+                      onClick={(e) => {
+                        this.props.navigation("academicProgram/alevelprogram");
+                      }}
+                    >
+                      Learn More
+                    </button>
+                  </Box>
+                </Box>
+              </div>
+            </div>
+
+            <div className="container-two">
+              <div className="bbsProgram">
+                <Box
+                  component="div"
+                  className="box1"
+                  sx={{
+                    width: 500,
+                    height: 550,
+                    boxShadow: 10,
+                    borderRadius: 8,
+                    backgroundColor: "#1FC32C",
+                  }}
+                >
+                  <h4 className="BBS">BBS Program</h4>
+                  <Box
+                    component="div"
+                    className="box2"
+                    sx={{
+                      width: 500,
+                      height: 500,
+                      boxShadow: 10,
+                      marginTop: 5,
+                      borderRadius: 8,
+                      backgroundColor: "white",
+                    }}
+                  >
+                    <img
+                      src={orientLogo}
+                      alt="Orient Logo"
+                      className="orientLogo"
+                    />
+                    <p className="header-text">
+                      Get the best education for the best of you{" "}
+                    </p>
+                    <ul>
+                      <li>Academic excellence at it's Peak</li>
+                      <li>
+                        Get to learn from the very best teacher of the fied
+                      </li>
+                      <li>Best Infrastructure and facilities</li>
+                      <li>
+                        Activities and programs to help you represent yourself
+                        towards the better future
+                      </li>
+                      <li>Events and sports help every year for students</li>
+                    </ul>
+                    <button
+                      onClick={(e) => {
+                        this.props.navigation("academicProgram/BBSprogram");
+                      }}
+                    >
+                        Learn More
+                    </button>
+                  </Box>
+                </Box>
+              </div>
+              <div className="babwsProgram">
+                <Box
+                  component="div"
+                  className="box1"
+                  sx={{
+                    width: 500,
+                    height: 550,
+                    boxShadow: 10,
+                    borderRadius: 8,
+                    backgroundColor: "#3E92E6",
+                  }}
+                >
+                  <h4 className="BABWS">BA/BWS Program</h4>
+                  <Box
+                    component="div"
+                    className="box2"
+                    sx={{
+                      width: 500,
+                      height: 500,
+                      boxShadow: 10,
+                      marginTop: 5,
+                      borderRadius: 8,
+                      backgroundColor: "white",
+                    }}
+                  >
+                    <img
+                      src={orientLogo}
+                      alt="Orient Logo"
+                      className="orientLogo"
+                    />
+                    <p className="header-text">
+                      Get the best education for the best of you{" "}
+                    </p>
+                    <ul>
+                      <li>Academic excellence at it's Peak</li>
+                      <li>
+                        Get to learn from the very best teacher of the fied
+                      </li>
+                      <li>Best Infrastructure and facilities</li>
+                      <li>
+                        Activities and programs to help you represent yourself
+                        towards the better future
+                      </li>
+                      <li>Events and sports help every year for students</li>
+                    </ul>
+                    <button
+                      onClick={(e) => {
+                        this.props.navigation("academicProgram/BABWSprogram");
+                      }}
+                    >
+                      Learn More
+                    </button>
                   </Box>
                 </Box>
               </div>
@@ -238,4 +361,3 @@ class Home extends Component {
     );
   }
 }
-

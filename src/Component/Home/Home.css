@@ -86,7 +86,7 @@
   display: flex;
 }
 .academicProgram {
-  display: inline-block;
+  display: block;
   align-items: center;
   justify-content: center;
   margin: 50px auto;
@@ -98,36 +98,36 @@
   font-size: 60px;
   font-family: Lucida Sans;
 }
-.academicProgram .container {
+.academicProgram .container-one {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto 20px;
 }
-.academicProgram .container .plusTwoProgram {
+.academicProgram .container-one .plusTwoProgram {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto 40px 0 0;
 }
-.academicProgram .container .plusTwoProgram .plusTwo {
+.academicProgram .container-one .plusTwoProgram .plusTwo {
   margin-left: 30px;
   color: white;
   font-size: 30px;
   font-weight: 700;
 }
-.academicProgram .container .plusTwoProgram .orientLogo {
+.academicProgram .container-one .plusTwoProgram .orientLogo {
   margin-top: 25px;
   margin-left: 30px;
   width: 120px;
 }
-.academicProgram .container .plusTwoProgram .header-text {
+.academicProgram .container-one .plusTwoProgram .header-text {
   font-size: 20px;
   color: #525252;
   margin-left: 30px;
   font-family: Apple Braille;
 }
-.academicProgram .container .plusTwoProgram ul {
+.academicProgram .container-one .plusTwoProgram ul {
   list-style: none;
   font-size: 15px;
   font-weight: 500;
@@ -136,19 +136,19 @@
   margin-top: -20px;
 }
 
-.academicProgram .container .plusTwoProgram ul li::before {
+.academicProgram .container-one .plusTwoProgram ul li::before {
   content: "\2022";
   margin-bottom: 50px;
   padding-right: 20px;
-  color: #1fc32c;
+  color: #EF8A00;
   font-weight: bold;
   margin-left: -1em;
   font-size: 35px;
   width: 100px;
 }
-.academicProgram .container .plusTwoProgram button {
+.academicProgram .container-one .plusTwoProgram button {
   display: block;
-  background-color: #1fc32c;
+  background-color: #EF8A00;
   border-style: none;
   border-radius: 30px;
   margin: auto 0 auto 20vw;
@@ -156,34 +156,34 @@
   height: 6vh;
   color: rgb(250, 248, 248);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
 }
-.academicProgram .container .A_level {
+.academicProgram .container-one .A_level {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto 0 0 40px;
 }
 
-.academicProgram .container .A_level h4 {
+.academicProgram .container-one .A_level h4 {
   margin-left: 30px;
   color: white;
   font-size: 30px;
   font-weight: 700;
 }
-.academicProgram .container .A_level img {
+.academicProgram .container-one .A_level img {
   margin-left: 30px;
   margin-top: 25px;
   width: 220px;
 }
-.academicProgram .container .A_level p {
+.academicProgram .container-one .A_level p {
   font-size: 20px;
   color: #525252;
   margin-left: 30px;
   font-family: Apple Braille;
 }
-.academicProgram .container .A_level ul {
+.academicProgram .container-one .A_level ul {
   list-style: none;
   font-size: 15px;
   font-weight: 500;
@@ -191,7 +191,7 @@
   margin-left: 20px;
   margin-top: -20px;
 }
-.academicProgram .container .A_level ul li::before {
+.academicProgram .container-one .A_level ul li::before {
   content: "\2022";
   margin-bottom: 50px;
   padding-right: 20px;
@@ -201,7 +201,7 @@
   font-size: 35px;
   width: 100px;
 }
-.academicProgram .container .A_level button {
+.academicProgram .container-one .A_level button {
   display: block;
   background-color: #e43d4d;
   border-style: none;
@@ -209,9 +209,125 @@
   margin: auto 0 auto 20vw;
   color: rgb(250, 248, 248);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   width: 12vw;
   height: 6vh;
+  cursor: pointer;
+}
+.academicProgram .container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vh 20px;
+}
+.academicProgram .container-two .bbsProgram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 40px 0 0;
+}
+.academicProgram .container-two .bbsProgram .BBS {
+  margin-left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.academicProgram .container-two .bbsProgram .orientLogo {
+  margin-top: 25px;
+  margin-left: 30px;
+  width: 120px;
+}
+.academicProgram .container-two .bbsProgram .header-text {
+  font-size: 20px;
+  color: #525252;
+  margin-left: 30px;
+  font-family: Apple Braille;
+}
+.academicProgram .container-two .bbsProgram ul {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.academicProgram .container-two .bbsProgram ul li::before {
+  content: "\2022";
+  margin-bottom: 50px;
+  padding-right: 20px;
+  color: #1FC32C;
+  font-weight: bold;
+  margin-left: -1em;
+  font-size: 35px;
+  width: 100px;
+}
+.academicProgram .container-two .bbsProgram button {
+  display: block;
+  background-color: #1FC32C;
+  border-style: none;
+  border-radius: 30px;
+  margin: auto 0 auto 20vw;
+  width: 12vw;
+  height: 6vh;
+  color: rgb(250, 248, 248);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.academicProgram .container-two .babwsProgram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 0 40px;
+}
+.academicProgram .container-two .babwsProgram .BABWS {
+  margin-left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.academicProgram .container-two .babwsProgram .orientLogo {
+  margin-top: 25px;
+  margin-left: 30px;
+  width: 120px;
+}
+.academicProgram .container-two .babwsProgram .header-text {
+  font-size: 20px;
+  color: #525252;
+  margin-left: 30px;
+  font-family: Apple Braille;
+}
+.academicProgram .container-two .babwsProgram ul {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.academicProgram .container-two .babwsProgram ul li::before {
+  content: "\2022";
+  margin-bottom: 50px;
+  padding-right: 20px;
+  color: #3E92E6;
+  font-weight: bold;
+  margin-left: -1em;
+  font-size: 35px;
+  width: 100px;
+}
+.academicProgram .container-two .babwsProgram button {
+  display: block;
+  background-color: #3E92E6;
+  border-style: none;
+  border-radius: 30px;
+  margin: auto 0 auto 20vw;
+  width: 12vw;
+  height: 6vh;
+  color: rgb(250, 248, 248);
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
 }
 .memoriesOfExcellence {
@@ -405,7 +521,7 @@
     font-size: 11px;
   }
   .program {
-    display: inline-block;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -422,44 +538,44 @@
     text-align: center;
     font-size: 40px;
   }
-  .academicProgram .container {
+  .academicProgram .container-one {
     display: inline-block;
     justify-content: center;
     align-items: center;
     margin: auto;
   }
-  .academicProgram .container .plusTwoProgram {
+  .academicProgram .container-one .plusTwoProgram {
     display: inline-block;
     align-items: center;
     justify-content: center;
     margin: 50px auto;
     text-align: start;
   }
-  .academicProgram .container .plusTwoProgram .box1 {
+  .academicProgram .container-one .plusTwoProgram .box1 {
     width: 90vw;
     height: 70vh;
   }
-  .academicProgram .container .plusTwoProgram .box1 .box2 {
+  .academicProgram .container-one .plusTwoProgram .box1 .box2 {
     width: 90vw;
     height: 70vh;
   }
-  .academicProgram .container .plusTwoProgram .plusTwo {
+  .academicProgram .container-one .plusTwoProgram .plusTwo {
     margin-left: 30px;
     color: white;
     font-size: 25px;
     font-weight: 600;
   }
-  .academicProgram .container .plusTwoProgram .orientLogo {
+  .academicProgram .container-one .plusTwoProgram .orientLogo {
     margin-top: 25px;
     margin-left: 30px;
     width: 60px;
   }
-  .academicProgram .container .plusTwoProgram .header-text {
+  .academicProgram .container-one .plusTwoProgram .header-text {
     font-size: 16px;
     color: #525252;
     margin-left: 30px;
   }
-  .academicProgram .container .plusTwoProgram ul {
+  .academicProgram .container-one .plusTwoProgram ul {
     list-style: none;
     font-size: 12px;
     font-weight: 500;
@@ -468,23 +584,23 @@
     margin-top: -20px;
   }
 
-  .academicProgram .container .plusTwoProgram ul li::before {
+  .academicProgram .container-one .plusTwoProgram ul li::before {
     content: "\2022";
     margin-bottom: 50px;
-    color: #1fc32c;
+    color: #EF8A00;
     font-weight: bold;
     margin-left: -1em;
     font-size: 30px;
     width: 50px;
   }
-  .academicProgram .container .plusTwoProgram button {
+  .academicProgram .container-one .plusTwoProgram button {
     width: 25vw;
     height: 5vh;
     margin: auto 0 auto 55vw;
     font-size: 14px;
     cursor: pointer;
   }
-  .academicProgram .container .A_level {
+  .academicProgram .container-one .A_level {
     display:inline-block;
     align-items: center;
     justify-content: center;
@@ -492,31 +608,31 @@
     text-align: start;
 
   }
-  .academicProgram .container .A_level .box3 {
+  .academicProgram .container-one .A_level .box3 {
     width: 90vw;
     height: 70vh;
   }
-  .academicProgram .container .A_level .box3 .box4 {
+  .academicProgram .container-one .A_level .box3 .box4 {
     width: 90vw;
     height: 70vh;
   }
-  .academicProgram .container .A_level h4 {
+  .academicProgram .container-one .A_level h4 {
     margin-left: 30px;
     color: white;
     font-size: 25px;
     font-weight: 600;
   }
-  .academicProgram .container .A_level img {
+  .academicProgram .container-one .A_level img {
     margin-top: 25px;
     margin-left: 30px;
     width: 140px;
   }
-  .academicProgram .container .A_level p {
+  .academicProgram .container-one .A_level p {
     font-size: 16px;
     color: #525252;
     margin-left: 30px;
   }
-  .academicProgram .container .A_level ul {
+  .academicProgram .container-one .A_level ul {
     list-style: none;
     font-size: 12px;
     font-weight: 500;
@@ -524,7 +640,7 @@
     margin-left: 20px;
     margin-top: -20px;
   }
-  .academicProgram .container .A_level ul li::before {
+  .academicProgram .container-one .A_level ul li::before {
     content: "\2022";
     margin-bottom: 50px;
     padding-right: 20px;
@@ -534,7 +650,125 @@
     font-size: 30px;
     width: 50px;
   }
-  .academicProgram .container .A_level button {
+  .academicProgram .container-one .A_level button {
+    width: 25vw;
+    height: 5vh;
+    margin: auto 0 auto 55vw;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .academicProgram .container-two {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .academicProgram .container-two .bbsProgram {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: start;
+  }
+  .academicProgram .container-two .bbsProgram .box1 {
+    width: 90vw;
+    height: 70vh;
+  }
+  .academicProgram .container-two .bbsProgram .box1 .box2 {
+    width: 90vw;
+    height: 70vh;
+  }
+  .academicProgram .container-two .bbsProgram .BBS {
+    margin-left: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .academicProgram .container-two .bbsProgram .orientLogo {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 60px;
+  }
+  .academicProgram .container-two .bbsProgram .header-text {
+    font-size: 16px;
+    color: #525252;
+    margin-left: 30px;
+  }
+  .academicProgram .container-two .bbsProgram ul {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .academicProgram .container-two .bbsProgram ul li::before {
+    content: "\2022";
+    margin-bottom: 50px;
+    color: #1fc32c;
+    font-weight: bold;
+    margin-left: -1em;
+    font-size: 30px;
+    width: 50px;
+  }
+  .academicProgram .container-two .bbsProgram button {
+    width: 25vw;
+    height: 5vh;
+    margin: auto 0 auto 55vw;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .academicProgram .container-two .babwsProgram {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    text-align: start;
+  }
+  .academicProgram .container-two .babwsProgram .box1 {
+    width: 90vw;
+    height: 70vh;
+  }
+  .academicProgram .container-two .babwsProgram .box1 .box2 {
+    width: 90vw;
+    height: 70vh;
+  }
+  .academicProgram .container-two .babwsProgram .BABWS {
+    margin-left: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .academicProgram .container-two .babwsProgram .orientLogo {
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 60px;
+  }
+  .academicProgram .container-two .babwsProgram .header-text {
+    font-size: 16px;
+    color: #525252;
+    margin-left: 30px;
+  }
+  .academicProgram .container-two .babwsProgram ul {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .academicProgram .container-two .babwsProgram ul li::before {
+    content: "\2022";
+    margin-bottom: 50px;
+    color: #3E92E6;
+    font-weight: bold;
+    margin-left: -1em;
+    font-size: 30px;
+    width: 50px;
+  }
+  .academicProgram .container-two .babwsProgram button {
     width: 25vw;
     height: 5vh;
     margin: auto 0 auto 55vw;
