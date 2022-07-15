@@ -1,11 +1,19 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { auth } from "../../Component/firebase/fire";
+import { auth, db } from "../../Component/firebase/fire";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
+import {
+  getFirestore,
+  query,
+  getDocs,
+  collection,
+  where,
+  addDoc,
+} from "firebase/firestore";
 
 const AuthContext = createContext({
   currentUser: null,
@@ -28,17 +36,34 @@ export default function AuthContextProvider({ children }) {
     };
   }, []);
 
-  function register(email, password) {
-    return createUserWithEmailAndPassword(auth, email, password);
-  }
+  const register = async (name, email, password) => {
+    try {
+      const res = await createUserWithEmailAndPassword(auth, email, password);
+      const user = res.user;
+      await addDoc(collection(db, "users"), {
+        uid: user.uid,
+        name,
+        authProvider: "local",
+        email,
+      });
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  };
 
-  function login(email, password) {
-    return signInWithEmailAndPassword(auth, email, password);
-  }
+  const login = async (email, password) => {
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  };
 
-  function logout() {
-    return signOut(auth);
-  }
+const logout = () => {
+    signOut(auth);
+  };
 
   const value = {
     currentUser,
@@ -49,6 +74,6 @@ export default function AuthContextProvider({ children }) {
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
 
-export function useAuthValue(){
+export function useAuthValue() {
   return useContext(AuthContext);
 }

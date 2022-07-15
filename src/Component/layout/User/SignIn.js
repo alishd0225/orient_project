@@ -1,21 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SignIn.css";
 import Header from "../Header/Header";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import  {useToast}  from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 import useMounted from "../Hooks/useMounted";
+import { auth } from "../../firebase/fire";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const SignIn = () => {
   const navigate = useNavigate();
-const location=useLocation();
+  const location = useLocation();
   const toast = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [user, loading, error] = useAuthState(auth);
 
   const { login } = useAuth();
-  const mounted=useMounted();
+  const mounted = useMounted();
+
+  useEffect(() => {
+    if (loading) {
+      // maybe trigger a loading screen
+      return;
+    }
+    if (user) navigate("/profile");
+  }, [user, loading]);
 
   return (
     <div>
@@ -48,7 +59,7 @@ const location=useLocation();
                   isClosable: true,
                 });
               })
-              .finally(() =>mounted.current && setIsSubmitting(false));
+              .finally(() => mounted.current && setIsSubmitting(false));
           }}
         >
           <h5 className="signin-text">LOGIN</h5>

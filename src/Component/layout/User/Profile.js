@@ -1,18 +1,39 @@
-import { useNavigate } from "react-router-dom";
-import React from "react";
 import "./Profile.css";
 import { useAuthValue } from "../../context/AuthContext";
-import { auth } from "../../firebase/fire";
 import { signOut } from "firebase/auth";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import loggedInImage from "../Header/loggedIn-image.jpg";
 import { Line } from "react-chartjs-2";
 import Chart from "chart.js/auto";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
+import { auth, db } from "../../firebase/fire";
+import { query, collection, getDocs, where } from "firebase/firestore";
 
 function Profile() {
   const { currentUser } = useAuthValue();
   const navigate = useNavigate();
+  const [user, loading, error] = useAuthState(auth);
+  const [name, setName] = useState("");
+
+  const fetchUserName = async () => {
+    try {
+      const q = query(collection(db, "users"), where("uid", "==", user?.uid));
+      const doc = await getDocs(q);
+      const data = doc.docs[0].data();
+      setName(data.name);
+    } catch (err) {
+      console.error(err);
+      alert("An error occured while fetching user data");
+    }
+  };
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate("/");
+    fetchUserName();
+  }, [user, loading]);
 
   return (
     <>
@@ -23,6 +44,7 @@ function Profile() {
           <div className="Image-name-details">
             <img src={loggedInImage} alt="User Image" className="userImage" />
             <p>
+              <p>{name}</p>
               <strong>Email: </strong>
               {currentUser?.email}
             </p>
@@ -49,12 +71,22 @@ function Profile() {
                 <p>Schedule</p>
               </div>
               <div className="news-elearning-report">
-                <button className="news-events" onClick={(e)=>{
-                  navigate("/news")
-                }}>News & Events</button>
-                <button className="e-learning" onClick={(e)=>{
-                  navigate("/learning/")
-                }}>E-Learning</button>
+                <button
+                  className="news-events"
+                  onClick={(e) => {
+                    navigate("/news");
+                  }}
+                >
+                  News & Events
+                </button>
+                <button
+                  className="e-learning"
+                  onClick={(e) => {
+                    navigate("/learning/");
+                  }}
+                >
+                  E-Learning
+                </button>
                 <button className="report">Report</button>
               </div>
             </div>
@@ -87,17 +119,7 @@ function Profile() {
                     label: "Academic Progress",
                     // y-axis data plotting values
                     data: [
-                      140,
-                      150,
-                      200,
-                      220,
-                      200,
-                      250,
-                      290,
-                      150,
-                      170,
-                      200,
-                      190,
+                      140, 150, 200, 220, 200, 250, 290, 150, 170, 200, 190,
                       220,
                     ],
                     fill: false,
@@ -138,17 +160,7 @@ function Profile() {
                     label: "Individual Progress",
                     // y-axis data plotting values
                     data: [
-                      140,
-                      150,
-                      165,
-                      180,
-                      210,
-                      200,
-                      220,
-                      230,
-                      250,
-                      260,
-                      250,
+                      140, 150, 165, 180, 210, 200, 220, 230, 250, 260, 250,
                       233,
                     ],
                     fill: false,

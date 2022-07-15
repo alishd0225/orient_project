@@ -1,24 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SignUp.css";
 import Header from "../Header/Header";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import { useToast } from "@chakra-ui/react";
 import useMounted from "../Hooks/useMounted";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase/fire";
 
 const SignUp = () => {
   const navigate = useNavigate();
-  const location=useLocation();
+  const location = useLocation();
   const toast = useToast();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [user, loading, error] = useAuthState(auth);
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const mounted = useMounted();
 
   const { register } = useAuth();
+
+  useEffect(() => {
+    if (loading) {
+      // maybe trigger a loading screen
+      return;
+    }
+    if (user) navigate("/profile");
+  }, [user, loading]);
   return (
     <div>
       <Header />
@@ -37,7 +48,7 @@ const SignUp = () => {
             }
             if (password === confirmPassword) {
               setIsSubmitting(true);
-              register(email, password)
+              register(username, email, password)
                 .then((response) => {
                   console.log(response);
                   navigate(location.state?.from ?? "/");
@@ -51,7 +62,7 @@ const SignUp = () => {
                     isClosable: true,
                   });
                 })
-                .finally(() =>mounted.current && setIsSubmitting(false));
+                .finally(() => mounted.current && setIsSubmitting(false));
             } else {
               console.log("Password do not match");
             }
